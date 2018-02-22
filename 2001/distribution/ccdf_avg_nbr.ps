@@ -1,0 +1,5427 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ccdf_avg_nbr.ps
+%%Creator: gnuplot 5.0 patchlevel 3
+%%CreationDate: Sun Feb 18 21:08:38 2018
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 302
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -73 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 410 50 lineto 410 302 lineto 50 302 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.1 (Oct 2015)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTB {BL [] LCb DL} def
+/LTw {PL [] 1 setgray} def
+/LTb {PL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (ccdf_avg_nbr.ps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.0 patchlevel 3)
+  /Author (bcharyyev)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Sun Feb 18 21:08:38 2018)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Support for boxed text - Ethan A Merritt May 2005
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { Boxing
+    { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if } def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox 1 1 1 setrgbcolor fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+% redundant definitions for compatibility with prologue.ps older than 5.0.2
+/LTB {BL [] LCb DL} def
+/LTb {PL [] LCb DL} def
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 220 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 7200.00 5040.00 BoxColFill} if
+/Helvetica findfont 220 scalefont setfont
+/vshift -73 def
+1.000 UL
+LTb
+LCb setrgbcolor
+1474 704 M
+63 0 V
+5266 0 R
+-63 0 V
+stroke
+1342 704 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 0.0001)]
+] -73.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1474 1010 M
+31 0 V
+5298 0 R
+-31 0 V
+1474 1190 M
+31 0 V
+5298 0 R
+-31 0 V
+1474 1317 M
+31 0 V
+5298 0 R
+-31 0 V
+-5298 98 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 81 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 68 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 59 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 52 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 47 R
+63 0 V
+5266 0 R
+-63 0 V
+stroke
+1342 1722 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 0.001)]
+] -73.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1474 2028 M
+31 0 V
+5298 0 R
+-31 0 V
+1474 2207 M
+31 0 V
+5298 0 R
+-31 0 V
+1474 2334 M
+31 0 V
+5298 0 R
+-31 0 V
+-5298 99 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 81 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 68 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 59 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 52 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 47 R
+63 0 V
+5266 0 R
+-63 0 V
+stroke
+1342 2740 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 0.01)]
+] -73.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1474 3046 M
+31 0 V
+5298 0 R
+-31 0 V
+1474 3225 M
+31 0 V
+5298 0 R
+-31 0 V
+1474 3352 M
+31 0 V
+5298 0 R
+-31 0 V
+-5298 99 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 80 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 69 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 59 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 52 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 46 R
+63 0 V
+5266 0 R
+-63 0 V
+stroke
+1342 3757 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 0.1)]
+] -73.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1474 4064 M
+31 0 V
+5298 0 R
+-31 0 V
+1474 4243 M
+31 0 V
+5298 0 R
+-31 0 V
+1474 4370 M
+31 0 V
+5298 0 R
+-31 0 V
+-5298 99 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 80 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 68 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 59 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 52 R
+31 0 V
+5298 0 R
+-31 0 V
+-5298 47 R
+63 0 V
+5266 0 R
+-63 0 V
+stroke
+1342 4775 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 1)]
+] -73.3 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1474 704 M
+0 63 V
+0 4008 R
+0 -63 V
+stroke
+1474 484 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 0.0001)]
+] -73.3 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1875 704 M
+0 31 V
+0 4040 R
+0 -31 V
+2110 704 M
+0 31 V
+0 4040 R
+0 -31 V
+2276 704 M
+0 31 V
+0 4040 R
+0 -31 V
+2405 704 M
+0 31 V
+0 4040 R
+0 -31 V
+2511 704 M
+0 31 V
+0 4040 R
+0 -31 V
+2600 704 M
+0 31 V
+0 4040 R
+0 -31 V
+2677 704 M
+0 31 V
+0 4040 R
+0 -31 V
+2745 704 M
+0 31 V
+0 4040 R
+0 -31 V
+2806 704 M
+0 63 V
+0 4008 R
+0 -63 V
+stroke
+2806 484 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 0.001)]
+] -73.3 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3207 704 M
+0 31 V
+0 4040 R
+0 -31 V
+3442 704 M
+0 31 V
+0 4040 R
+0 -31 V
+3608 704 M
+0 31 V
+0 4040 R
+0 -31 V
+3737 704 M
+0 31 V
+0 4040 R
+0 -31 V
+3843 704 M
+0 31 V
+0 4040 R
+0 -31 V
+3932 704 M
+0 31 V
+0 4040 R
+0 -31 V
+4009 704 M
+0 31 V
+0 4040 R
+0 -31 V
+4078 704 M
+0 31 V
+0 4040 R
+0 -31 V
+4139 704 M
+0 63 V
+0 4008 R
+0 -63 V
+stroke
+4139 484 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 0.01)]
+] -73.3 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4540 704 M
+0 31 V
+0 4040 R
+0 -31 V
+4774 704 M
+0 31 V
+0 4040 R
+0 -31 V
+4941 704 M
+0 31 V
+0 4040 R
+0 -31 V
+5070 704 M
+0 31 V
+0 4040 R
+0 -31 V
+5175 704 M
+0 31 V
+0 4040 R
+0 -31 V
+5264 704 M
+0 31 V
+0 4040 R
+0 -31 V
+5342 704 M
+0 31 V
+0 4040 R
+0 -31 V
+5410 704 M
+0 31 V
+0 4040 R
+0 -31 V
+5471 704 M
+0 63 V
+0 4008 R
+0 -63 V
+stroke
+5471 484 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 0.1)]
+] -73.3 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5872 704 M
+0 31 V
+0 4040 R
+0 -31 V
+6106 704 M
+0 31 V
+0 4040 R
+0 -31 V
+6273 704 M
+0 31 V
+0 4040 R
+0 -31 V
+6402 704 M
+0 31 V
+0 4040 R
+0 -31 V
+6507 704 M
+0 31 V
+0 4040 R
+0 -31 V
+6597 704 M
+0 31 V
+0 4040 R
+0 -31 V
+6674 704 M
+0 31 V
+0 4040 R
+0 -31 V
+6742 704 M
+0 31 V
+0 4040 R
+0 -31 V
+6803 704 M
+0 63 V
+0 4008 R
+0 -63 V
+stroke
+6803 484 M
+[ [(Helvetica) 220.0 0.0 true true 0 ( 1)]
+] -73.3 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+1474 4775 N
+0 -4071 V
+5329 0 V
+0 4071 V
+-5329 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+176 2739 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 220.0 0.0 true true 0 (CCDF)]
+] -73.3 MCshow
+grestore
+LTb
+LCb setrgbcolor
+4138 154 M
+[ [(Helvetica) 220.0 0.0 true true 0 (Average Neighbor degree)]
+] -73.3 MCshow
+LTb
+% Begin plot #1
+1.000 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C /Helvetica findfont 220 scalefont setfont
+LCb setrgbcolor
+5816 877 M
+('nbr.ccdf' using 1:2) Rshow
+1.000 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C 5948 877 M
+591 0 V
+-800 362 R
+-142 307 V
+-39 179 V
+-39 127 V
+-14 99 V
+-36 80 V
+-27 68 V
+-2 59 V
+-7 52 V
+-3 47 V
+-7 42 V
+-5 39 V
+-9 35 V
+-13 33 V
+-10 30 V
+-2 29 V
+-2 27 V
+-1 25 V
+0 24 V
+0 22 V
+-3 22 V
+-1 21 V
+-3 19 V
+-6 19 V
+-1 18 V
+-6 17 V
+-2 17 V
+-3 16 V
+-2 16 V
+-1 15 V
+-1 14 V
+0 14 V
+0 14 V
+-1 13 V
+-2 13 V
+0 12 V
+-1 12 V
+-1 12 V
+0 12 V
+-7 11 V
+-4 11 V
+-5 10 V
+0 31 V
+-3 10 V
+-2 9 V
+-2 9 V
+0 9 V
+-1 9 V
+-4 9 V
+-1 9 V
+-3 8 V
+0 8 V
+-1 9 V
+0 7 V
+-1 8 V
+-1 8 V
+-2 8 V
+0 7 V
+-3 7 V
+0 7 V
+-1 8 V
+0 7 V
+-3 6 V
+-4 7 V
+-1 7 V
+0 6 V
+0 7 V
+-1 6 V
+0 6 V
+-1 7 V
+0 6 V
+-1 6 V
+0 6 V
+-2 5 V
+-2 6 V
+-1 6 V
+-1 6 V
+-1 5 V
+-1 6 V
+0 5 V
+-4 5 V
+0 6 V
+-1 5 V
+-1 5 V
+-1 5 V
+0 5 V
+-3 5 V
+-2 5 V
+-1 5 V
+-2 5 V
+-2 5 V
+0 4 V
+-2 5 V
+-1 5 V
+0 4 V
+0 5 V
+0 4 V
+-3 5 V
+-1 4 V
+-1 5 V
+0 4 V
+-2 4 V
+0 4 V
+stroke 5260 3296 M
+-1 5 V
+-1 4 V
+-1 4 V
+0 4 V
+-2 4 V
+-1 4 V
+0 4 V
+0 4 V
+0 4 V
+-1 4 V
+-1 3 V
+0 4 V
+0 4 V
+0 4 V
+-1 3 V
+0 4 V
+-2 4 V
+0 3 V
+0 4 V
+-1 3 V
+-2 4 V
+0 3 V
+0 4 V
+-1 3 V
+-3 4 V
+0 3 V
+-2 3 V
+-1 4 V
+-1 3 V
+0 3 V
+-1 4 V
+0 3 V
+0 3 V
+-1 3 V
+-3 3 V
+0 4 V
+-1 3 V
+0 3 V
+0 3 V
+-1 3 V
+0 3 V
+-1 3 V
+-1 3 V
+0 3 V
+0 3 V
+0 3 V
+-3 3 V
+0 3 V
+-1 3 V
+-1 2 V
+0 3 V
+-1 3 V
+0 3 V
+0 3 V
+0 3 V
+-1 2 V
+-1 3 V
+0 3 V
+0 2 V
+0 3 V
+-1 3 V
+0 2 V
+-1 3 V
+0 3 V
+0 2 V
+0 3 V
+-1 2 V
+-1 3 V
+-1 3 V
+0 2 V
+0 3 V
+-1 2 V
+0 3 V
+0 2 V
+-1 3 V
+0 2 V
+-1 2 V
+0 3 V
+0 2 V
+-1 3 V
+0 2 V
+0 2 V
+-1 3 V
+-2 2 V
+0 2 V
+-2 3 V
+0 2 V
+-1 2 V
+0 3 V
+-1 2 V
+0 2 V
+-1 2 V
+0 3 V
+0 2 V
+-1 2 V
+0 2 V
+-1 3 V
+0 2 V
+0 2 V
+0 2 V
+-1 2 V
+0 2 V
+0 2 V
+0 3 V
+stroke 5201 3601 M
+-1 2 V
+0 2 V
+0 2 V
+-1 2 V
+0 2 V
+0 2 V
+-1 2 V
+0 2 V
+0 2 V
+-1 2 V
+-1 2 V
+0 2 V
+-1 2 V
+0 2 V
+0 2 V
+0 2 V
+-1 2 V
+0 2 V
+0 2 V
+0 2 V
+0 2 V
+0 2 V
+-1 2 V
+-1 2 V
+0 2 V
+0 1 V
+-1 2 V
+0 2 V
+0 2 V
+0 2 V
+-1 2 V
+0 2 V
+0 1 V
+0 2 V
+0 2 V
+-1 2 V
+0 2 V
+-1 1 V
+0 2 V
+-1 2 V
+0 2 V
+-1 2 V
+0 1 V
+0 2 V
+-1 2 V
+0 2 V
+-1 1 V
+0 2 V
+0 2 V
+-1 1 V
+0 2 V
+0 2 V
+0 1 V
+-1 2 V
+0 2 V
+0 2 V
+0 1 V
+-1 2 V
+0 1 V
+0 2 V
+0 2 V
+0 1 V
+-1 2 V
+0 2 V
+0 1 V
+-2 2 V
+0 1 V
+0 2 V
+0 2 V
+-2 1 V
+0 2 V
+0 1 V
+-1 2 V
+0 2 V
+-1 1 V
+0 2 V
+-1 1 V
+0 2 V
+0 1 V
+-1 2 V
+0 1 V
+-1 2 V
+0 1 V
+0 2 V
+0 1 V
+0 2 V
+-1 1 V
+0 2 V
+0 1 V
+0 2 V
+0 1 V
+-1 2 V
+0 1 V
+-1 2 V
+0 1 V
+-1 2 V
+-1 1 V
+0 2 V
+-1 1 V
+0 1 V
+-1 2 V
+0 1 V
+0 2 V
+-2 1 V
+stroke 5162 3779 M
+0 2 V
+0 1 V
+-1 1 V
+0 2 V
+0 1 V
+0 1 V
+-1 2 V
+0 1 V
+0 2 V
+0 1 V
+0 1 V
+-1 2 V
+0 1 V
+0 1 V
+-1 2 V
+0 1 V
+-1 1 V
+0 2 V
+0 1 V
+0 1 V
+-1 2 V
+-1 1 V
+-2 1 V
+-1 2 V
+0 1 V
+0 1 V
+0 2 V
+0 1 V
+-1 1 V
+0 2 V
+-1 1 V
+0 1 V
+0 1 V
+0 2 V
+-1 1 V
+0 1 V
+0 1 V
+-2 2 V
+0 1 V
+-2 1 V
+0 2 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 2 V
+0 1 V
+-1 1 V
+0 1 V
+0 2 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 2 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 2 V
+-1 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 2 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 2 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 2 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 2 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 2 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+stroke 5121 3906 M
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 2 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-2 1 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 2 V
+0 1 V
+-2 1 V
+0 1 V
+0 1 V
+-2 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-2 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+stroke 5074 4009 M
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 2 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-2 0 V
+0 1 V
+-1 1 V
+0 1 V
+-3 0 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 2 V
+-1 1 V
+-2 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 0 V
+-1 1 V
+0 1 V
+-1 0 V
+-2 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+stroke 5025 4099 M
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+0 2 V
+-1 0 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-2 0 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+-2 2 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 1 V
+-2 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 0 V
+-1 1 V
+0 1 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+0 1 V
+-2 1 V
+0 1 V
+-1 0 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+stroke 4970 4186 M
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+0 1 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 1 V
+-2 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 0 V
+-2 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-2 0 V
+0 1 V
+-1 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 1 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 1 V
+-1 1 V
+-1 1 V
+-2 0 V
+0 1 V
+-2 0 V
+0 1 V
+-2 1 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-2 0 V
+-3 1 V
+stroke 4890 4260 M
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-2 0 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-3 1 V
+-1 1 V
+-4 1 V
+-1 1 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+-2 0 V
+-2 1 V
+-1 0 V
+-1 1 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+0 1 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-2 0 V
+-1 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+-2 0 V
+stroke 4804 4324 M
+-1 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-2 1 V
+-2 0 V
+-1 1 V
+0 1 V
+-1 0 V
+-4 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 1 V
+0 1 V
+-1 0 V
+-2 1 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-3 1 V
+-1 1 V
+-2 0 V
+-1 1 V
+-1 0 V
+-2 1 V
+-1 2 V
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+-4 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-2 1 V
+0 1 V
+-1 0 V
+-1 1 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-2 0 V
+stroke 4711 4384 M
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-2 0 V
+0 1 V
+-2 0 V
+0 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-3 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 0 V
+-3 1 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-3 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-3 1 V
+-1 0 V
+-2 1 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+0 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-2 0 V
+-2 1 V
+-2 0 V
+-1 1 V
+-1 1 V
+-2 0 V
+-1 1 V
+-3 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 1 V
+-2 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+0 1 V
+0 1 V
+-1 0 V
+stroke 4603 4442 M
+-1 0 V
+0 1 V
+-3 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-2 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-2 1 V
+-1 0 V
+0 1 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 1 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 1 V
+-1 0 V
+stroke 4516 4491 M
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+-3 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 1 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 1 V
+-1 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 1 V
+-1 0 V
+-3 1 V
+0 1 V
+-1 0 V
+-1 0 V
+stroke 4422 4540 M
+0 1 V
+-2 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 2 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-1 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-2 1 V
+-2 0 V
+-1 0 V
+-1 1 V
+stroke 4327 4586 M
+-1 0 V
+-1 0 V
+-2 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-2 0 V
+-1 0 V
+-1 0 V
+0 1 V
+-2 0 V
+-2 0 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+-1 1 V
+-1 0 V
+-2 0 V
+0 1 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-4 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-2 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+0 1 V
+-1 0 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-2 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+-2 1 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+0 1 V
+stroke 4224 4622 M
+-1 0 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-3 0 V
+-2 0 V
+-1 1 V
+-1 0 V
+-2 1 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-3 1 V
+-2 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-2 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-2 1 V
+-1 0 V
+-2 0 V
+-1 1 V
+-1 0 V
+-3 1 V
+-1 0 V
+-1 0 V
+-2 1 V
+-1 0 V
+-1 1 V
+-1 0 V
+-2 0 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-3 1 V
+-1 0 V
+-3 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+-2 1 V
+-2 0 V
+-1 0 V
+-2 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-3 0 V
+-2 0 V
+-1 1 V
+-2 0 V
+-2 1 V
+-2 0 V
+-1 0 V
+-2 0 V
+-2 1 V
+-2 0 V
+0 1 V
+-1 0 V
+-4 0 V
+-1 0 V
+-3 1 V
+-2 0 V
+-1 1 V
+-1 0 V
+-2 0 V
+-1 1 V
+-3 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-2 0 V
+-2 1 V
+-1 0 V
+-2 1 V
+-1 0 V
+-2 0 V
+-2 0 V
+-2 1 V
+-1 1 V
+-2 1 V
+-1 0 V
+-2 0 V
+-1 1 V
+stroke 4073 4659 M
+-1 0 V
+-1 0 V
+-2 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-5 0 V
+-2 1 V
+-1 1 V
+-3 0 V
+-1 0 V
+-6 0 V
+-3 1 V
+-2 0 V
+-1 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-2 0 V
+-2 1 V
+-1 0 V
+-3 1 V
+-1 0 V
+-4 0 V
+-1 1 V
+-2 0 V
+-3 0 V
+-2 0 V
+0 1 V
+-2 0 V
+-2 1 V
+-3 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+-3 1 V
+-1 1 V
+-3 0 V
+-2 0 V
+-1 0 V
+-5 0 V
+-2 2 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-2 0 V
+-4 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-5 1 V
+-1 0 V
+-1 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+-1 0 V
+-2 0 V
+-4 1 V
+-1 0 V
+-2 0 V
+0 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-3 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+-2 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-5 0 V
+0 1 V
+-2 0 V
+-1 0 V
+-2 0 V
+-1 1 V
+-2 0 V
+-1 0 V
+-1 0 V
+-2 0 V
+-2 1 V
+-2 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+0 1 V
+stroke 3903 4692 M
+-2 0 V
+-3 0 V
+-2 0 V
+-2 0 V
+-1 1 V
+-4 0 V
+-2 0 V
+-1 1 V
+-8 0 V
+-5 1 V
+-1 0 V
+-1 1 V
+-2 0 V
+-4 0 V
+-2 0 V
+-2 1 V
+-3 1 V
+-1 0 V
+-5 0 V
+-2 1 V
+-3 0 V
+-4 0 V
+-1 0 V
+-3 0 V
+-4 1 V
+-1 0 V
+-1 0 V
+-2 1 V
+-6 0 V
+-1 1 V
+-1 0 V
+-4 0 V
+-1 1 V
+-4 0 V
+-5 1 V
+-2 0 V
+-1 0 V
+0 1 V
+-6 0 V
+-2 0 V
+-1 0 V
+-2 1 V
+-4 0 V
+-3 0 V
+-4 1 V
+-1 0 V
+-4 0 V
+-7 0 V
+-2 1 V
+-2 0 V
+-1 0 V
+-4 0 V
+-2 0 V
+-4 1 V
+-3 0 V
+-1 0 V
+0 1 V
+-1 0 V
+-1 0 V
+-2 0 V
+-7 0 V
+-4 1 V
+-5 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-5 0 V
+-2 0 V
+-4 0 V
+-1 0 V
+-2 1 V
+-3 0 V
+-1 0 V
+-1 0 V
+-4 1 V
+-1 0 V
+-3 0 V
+-4 1 V
+-2 1 V
+-3 0 V
+-2 0 V
+-3 1 V
+-6 0 V
+-1 1 V
+-3 0 V
+-1 0 V
+-6 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+-3 0 V
+-1 0 V
+-5 1 V
+-5 1 V
+0 1 V
+-6 0 V
+-3 0 V
+-1 0 V
+-2 0 V
+-1 1 V
+-1 0 V
+-1 0 V
+-1 0 V
+stroke 3638 4724 M
+-2 0 V
+-1 2 V
+-1 0 V
+-1 0 V
+-1 0 V
+-1 1 V
+-1 0 V
+-4 0 V
+-4 0 V
+-9 0 V
+-3 2 V
+-4 0 V
+-1 0 V
+-5 1 V
+-4 0 V
+-3 0 V
+-5 0 V
+-2 1 V
+-4 1 V
+-2 0 V
+-5 0 V
+-2 0 V
+-4 0 V
+-1 1 V
+-2 0 V
+-4 0 V
+-6 2 V
+-1 0 V
+-2 1 V
+-4 0 V
+-1 0 V
+-4 0 V
+-5 0 V
+-4 0 V
+-5 2 V
+-2 0 V
+0 1 V
+-2 0 V
+-3 0 V
+-2 0 V
+-2 1 V
+-1 0 V
+-3 0 V
+-1 0 V
+-1 0 V
+-1 0 V
+-5 1 V
+-6 2 V
+-1 0 V
+-3 1 V
+-2 0 V
+-3 0 V
+-5 0 V
+-4 1 V
+-1 0 V
+-2 0 V
+-3 1 V
+-4 0 V
+-2 0 V
+-2 1 V
+-2 0 V
+-1 0 V
+-2 0 V
+-3 1 V
+-1 0 V
+-1 0 V
+-4 0 V
+-1 0 V
+-8 1 V
+-9 1 V
+-7 0 V
+-3 1 V
+-3 0 V
+-1 0 V
+-1 0 V
+-2 0 V
+-7 1 V
+-3 0 V
+-2 0 V
+-2 0 V
+-7 1 V
+-1 0 V
+-2 0 V
+-4 0 V
+-14 1 V
+-6 1 V
+-6 0 V
+-1 0 V
+-5 0 V
+-3 1 V
+-4 0 V
+-5 0 V
+-2 1 V
+-5 0 V
+-15 1 V
+-3 0 V
+-2 0 V
+-4 0 V
+-3 1 V
+-13 0 V
+-21 1 V
+-3 1 V
+-2 0 V
+-2 0 V
+stroke 3273 4761 M
+-6 1 V
+-3 0 V
+-6 0 V
+-4 2 V
+-11 0 V
+-8 0 V
+-8 1 V
+-15 0 V
+-13 1 V
+-1 0 V
+-6 0 V
+-5 0 V
+-9 1 V
+-9 0 V
+-8 0 V
+-18 1 V
+-9 0 V
+-9 1 V
+-3 0 V
+-16 0 V
+-30 1 V
+-10 0 V
+-8 0 V
+-13 1 V
+-22 0 V
+-46 0 V
+-50 1 V
+-27 0 V
+-43 1 V
+-46 0 V
+-106 1 V
+-129 0 V
+-106 1 V
+-61 0 V
+-234 0 V
+5739 1239 Pls
+5597 1546 Pls
+5558 1725 Pls
+5519 1852 Pls
+5505 1951 Pls
+5469 2031 Pls
+5442 2099 Pls
+5440 2158 Pls
+5433 2210 Pls
+5430 2257 Pls
+5423 2299 Pls
+5418 2338 Pls
+5409 2373 Pls
+5396 2406 Pls
+5386 2436 Pls
+5384 2465 Pls
+5382 2492 Pls
+5381 2517 Pls
+5381 2541 Pls
+5381 2563 Pls
+5378 2585 Pls
+5377 2606 Pls
+5374 2625 Pls
+5368 2644 Pls
+5367 2662 Pls
+5361 2679 Pls
+5359 2696 Pls
+5356 2712 Pls
+5354 2728 Pls
+5353 2743 Pls
+5352 2757 Pls
+5352 2771 Pls
+5352 2785 Pls
+5351 2798 Pls
+5349 2811 Pls
+5349 2823 Pls
+5348 2835 Pls
+5347 2847 Pls
+5347 2859 Pls
+5340 2870 Pls
+5336 2881 Pls
+5331 2891 Pls
+5331 2922 Pls
+5328 2932 Pls
+5326 2941 Pls
+5324 2950 Pls
+5324 2959 Pls
+5323 2968 Pls
+5319 2977 Pls
+5318 2986 Pls
+5315 2994 Pls
+5315 3002 Pls
+5314 3011 Pls
+5314 3018 Pls
+5313 3026 Pls
+5312 3034 Pls
+5310 3042 Pls
+5310 3049 Pls
+5307 3056 Pls
+5307 3063 Pls
+5306 3071 Pls
+5306 3078 Pls
+5303 3084 Pls
+5299 3091 Pls
+5298 3098 Pls
+5298 3104 Pls
+5298 3111 Pls
+5297 3117 Pls
+5297 3123 Pls
+5296 3130 Pls
+5296 3136 Pls
+5295 3142 Pls
+5295 3148 Pls
+5293 3153 Pls
+5291 3159 Pls
+5290 3165 Pls
+5289 3171 Pls
+5288 3176 Pls
+5287 3182 Pls
+5287 3187 Pls
+5283 3192 Pls
+5283 3198 Pls
+5282 3203 Pls
+5281 3208 Pls
+5280 3213 Pls
+5280 3218 Pls
+5277 3223 Pls
+5275 3228 Pls
+5274 3233 Pls
+5272 3238 Pls
+5270 3243 Pls
+5270 3247 Pls
+5268 3252 Pls
+5267 3257 Pls
+5267 3261 Pls
+5267 3266 Pls
+5267 3270 Pls
+5264 3275 Pls
+5263 3279 Pls
+5262 3284 Pls
+5262 3288 Pls
+5260 3292 Pls
+5260 3296 Pls
+5259 3301 Pls
+5258 3305 Pls
+5257 3309 Pls
+5257 3313 Pls
+5255 3317 Pls
+5254 3321 Pls
+5254 3325 Pls
+5254 3329 Pls
+5254 3333 Pls
+5253 3337 Pls
+5252 3340 Pls
+5252 3344 Pls
+5252 3348 Pls
+5252 3352 Pls
+5251 3355 Pls
+5251 3359 Pls
+5249 3363 Pls
+5249 3366 Pls
+5249 3370 Pls
+5248 3373 Pls
+5246 3377 Pls
+5246 3380 Pls
+5246 3384 Pls
+5245 3387 Pls
+5242 3391 Pls
+5242 3394 Pls
+5240 3397 Pls
+5239 3401 Pls
+5238 3404 Pls
+5238 3407 Pls
+5237 3411 Pls
+5237 3414 Pls
+5237 3417 Pls
+5236 3420 Pls
+5233 3423 Pls
+5233 3427 Pls
+5232 3430 Pls
+5232 3433 Pls
+5232 3436 Pls
+5231 3439 Pls
+5231 3442 Pls
+5230 3445 Pls
+5229 3448 Pls
+5229 3451 Pls
+5229 3454 Pls
+5229 3457 Pls
+5226 3460 Pls
+5226 3463 Pls
+5225 3466 Pls
+5224 3468 Pls
+5224 3471 Pls
+5223 3474 Pls
+5223 3477 Pls
+5223 3480 Pls
+5223 3483 Pls
+5222 3485 Pls
+5221 3488 Pls
+5221 3491 Pls
+5221 3493 Pls
+5221 3496 Pls
+5220 3499 Pls
+5220 3501 Pls
+5219 3504 Pls
+5219 3507 Pls
+5219 3509 Pls
+5219 3512 Pls
+5218 3514 Pls
+5217 3517 Pls
+5216 3520 Pls
+5216 3522 Pls
+5216 3525 Pls
+5215 3527 Pls
+5215 3530 Pls
+5215 3532 Pls
+5214 3535 Pls
+5214 3537 Pls
+5213 3539 Pls
+5213 3542 Pls
+5213 3544 Pls
+5212 3547 Pls
+5212 3549 Pls
+5212 3551 Pls
+5211 3554 Pls
+5209 3556 Pls
+5209 3558 Pls
+5207 3561 Pls
+5207 3563 Pls
+5206 3565 Pls
+5206 3568 Pls
+5205 3570 Pls
+5205 3572 Pls
+5204 3574 Pls
+5204 3577 Pls
+5204 3579 Pls
+5203 3581 Pls
+5203 3583 Pls
+5202 3586 Pls
+5202 3588 Pls
+5202 3590 Pls
+5202 3592 Pls
+5201 3594 Pls
+5201 3596 Pls
+5201 3598 Pls
+5201 3601 Pls
+5200 3603 Pls
+5200 3605 Pls
+5200 3607 Pls
+5199 3609 Pls
+5199 3611 Pls
+5199 3613 Pls
+5198 3615 Pls
+5198 3617 Pls
+5198 3619 Pls
+5197 3621 Pls
+5196 3623 Pls
+5196 3625 Pls
+5195 3627 Pls
+5195 3629 Pls
+5195 3631 Pls
+5195 3633 Pls
+5194 3635 Pls
+5194 3637 Pls
+5194 3639 Pls
+5194 3641 Pls
+5194 3643 Pls
+5194 3645 Pls
+5193 3647 Pls
+5192 3649 Pls
+5192 3651 Pls
+5192 3652 Pls
+5191 3654 Pls
+5191 3656 Pls
+5191 3658 Pls
+5191 3660 Pls
+5190 3662 Pls
+5190 3664 Pls
+5190 3665 Pls
+5190 3667 Pls
+5190 3669 Pls
+5189 3671 Pls
+5189 3673 Pls
+5188 3674 Pls
+5188 3676 Pls
+5187 3678 Pls
+5187 3680 Pls
+5186 3682 Pls
+5186 3683 Pls
+5186 3685 Pls
+5185 3687 Pls
+5185 3689 Pls
+5184 3690 Pls
+5184 3692 Pls
+5184 3694 Pls
+5183 3695 Pls
+5183 3697 Pls
+5183 3699 Pls
+5183 3700 Pls
+5182 3702 Pls
+5182 3704 Pls
+5182 3706 Pls
+5182 3707 Pls
+5181 3709 Pls
+5181 3710 Pls
+5181 3712 Pls
+5181 3714 Pls
+5181 3715 Pls
+5180 3717 Pls
+5180 3719 Pls
+5180 3720 Pls
+5178 3722 Pls
+5178 3723 Pls
+5178 3725 Pls
+5178 3727 Pls
+5176 3728 Pls
+5176 3730 Pls
+5176 3731 Pls
+5175 3733 Pls
+5175 3735 Pls
+5174 3736 Pls
+5174 3738 Pls
+5173 3739 Pls
+5173 3741 Pls
+5173 3742 Pls
+5172 3744 Pls
+5172 3745 Pls
+5171 3747 Pls
+5171 3748 Pls
+5171 3750 Pls
+5171 3751 Pls
+5171 3753 Pls
+5170 3754 Pls
+5170 3756 Pls
+5170 3757 Pls
+5170 3759 Pls
+5170 3760 Pls
+5169 3762 Pls
+5169 3763 Pls
+5168 3765 Pls
+5168 3766 Pls
+5167 3768 Pls
+5166 3769 Pls
+5166 3771 Pls
+5165 3772 Pls
+5165 3773 Pls
+5164 3775 Pls
+5164 3776 Pls
+5164 3778 Pls
+5162 3779 Pls
+5162 3781 Pls
+5162 3782 Pls
+5161 3783 Pls
+5161 3785 Pls
+5161 3786 Pls
+5161 3787 Pls
+5160 3789 Pls
+5160 3790 Pls
+5160 3792 Pls
+5160 3793 Pls
+5160 3794 Pls
+5159 3796 Pls
+5159 3797 Pls
+5159 3798 Pls
+5158 3800 Pls
+5158 3801 Pls
+5157 3802 Pls
+5157 3804 Pls
+5157 3805 Pls
+5157 3806 Pls
+5156 3808 Pls
+5155 3809 Pls
+5153 3810 Pls
+5152 3812 Pls
+5152 3813 Pls
+5152 3814 Pls
+5152 3816 Pls
+5152 3817 Pls
+5151 3818 Pls
+5151 3820 Pls
+5150 3821 Pls
+5150 3822 Pls
+5150 3823 Pls
+5150 3825 Pls
+5149 3826 Pls
+5149 3827 Pls
+5149 3828 Pls
+5147 3830 Pls
+5147 3831 Pls
+5145 3832 Pls
+5145 3834 Pls
+5144 3835 Pls
+5143 3836 Pls
+5143 3837 Pls
+5142 3838 Pls
+5142 3840 Pls
+5142 3841 Pls
+5141 3842 Pls
+5141 3843 Pls
+5141 3845 Pls
+5141 3846 Pls
+5141 3847 Pls
+5140 3848 Pls
+5140 3849 Pls
+5140 3851 Pls
+5140 3852 Pls
+5139 3853 Pls
+5139 3854 Pls
+5139 3855 Pls
+5139 3857 Pls
+5138 3858 Pls
+5137 3859 Pls
+5137 3860 Pls
+5137 3861 Pls
+5136 3863 Pls
+5135 3864 Pls
+5134 3865 Pls
+5134 3866 Pls
+5133 3867 Pls
+5133 3868 Pls
+5133 3869 Pls
+5133 3871 Pls
+5132 3872 Pls
+5132 3873 Pls
+5132 3874 Pls
+5132 3875 Pls
+5131 3876 Pls
+5130 3877 Pls
+5130 3879 Pls
+5129 3880 Pls
+5129 3881 Pls
+5128 3882 Pls
+5128 3883 Pls
+5127 3884 Pls
+5127 3885 Pls
+5127 3886 Pls
+5127 3888 Pls
+5126 3889 Pls
+5126 3890 Pls
+5125 3891 Pls
+5125 3892 Pls
+5124 3893 Pls
+5124 3894 Pls
+5124 3895 Pls
+5124 3896 Pls
+5123 3897 Pls
+5123 3898 Pls
+5123 3900 Pls
+5123 3901 Pls
+5122 3902 Pls
+5122 3903 Pls
+5122 3904 Pls
+5122 3905 Pls
+5121 3906 Pls
+5121 3907 Pls
+5121 3908 Pls
+5121 3909 Pls
+5120 3910 Pls
+5120 3911 Pls
+5119 3912 Pls
+5119 3913 Pls
+5119 3914 Pls
+5119 3915 Pls
+5118 3916 Pls
+5118 3917 Pls
+5117 3918 Pls
+5117 3919 Pls
+5117 3921 Pls
+5116 3922 Pls
+5116 3923 Pls
+5115 3924 Pls
+5114 3925 Pls
+5114 3926 Pls
+5114 3927 Pls
+5113 3928 Pls
+5113 3929 Pls
+5113 3930 Pls
+5113 3931 Pls
+5112 3932 Pls
+5112 3933 Pls
+5111 3934 Pls
+5110 3935 Pls
+5110 3936 Pls
+5109 3937 Pls
+5109 3938 Pls
+5109 3939 Pls
+5109 3940 Pls
+5108 3941 Pls
+5107 3942 Pls
+5106 3943 Pls
+5106 3943 Pls
+5105 3944 Pls
+5105 3945 Pls
+5104 3946 Pls
+5104 3947 Pls
+5104 3948 Pls
+5104 3949 Pls
+5103 3950 Pls
+5103 3951 Pls
+5103 3952 Pls
+5102 3953 Pls
+5102 3954 Pls
+5102 3955 Pls
+5102 3956 Pls
+5100 3957 Pls
+5100 3958 Pls
+5100 3959 Pls
+5099 3960 Pls
+5098 3961 Pls
+5097 3962 Pls
+5097 3963 Pls
+5097 3963 Pls
+5096 3964 Pls
+5095 3965 Pls
+5095 3966 Pls
+5095 3967 Pls
+5095 3968 Pls
+5094 3969 Pls
+5094 3970 Pls
+5094 3971 Pls
+5093 3972 Pls
+5093 3973 Pls
+5093 3974 Pls
+5092 3974 Pls
+5091 3975 Pls
+5091 3976 Pls
+5090 3977 Pls
+5090 3978 Pls
+5090 3979 Pls
+5090 3980 Pls
+5089 3982 Pls
+5089 3983 Pls
+5089 3983 Pls
+5087 3984 Pls
+5087 3985 Pls
+5087 3986 Pls
+5085 3987 Pls
+5085 3988 Pls
+5084 3989 Pls
+5084 3990 Pls
+5084 3991 Pls
+5083 3991 Pls
+5083 3992 Pls
+5081 3993 Pls
+5081 3994 Pls
+5080 3995 Pls
+5080 3996 Pls
+5080 3997 Pls
+5079 3997 Pls
+5079 3998 Pls
+5079 3999 Pls
+5079 4000 Pls
+5078 4001 Pls
+5077 4002 Pls
+5077 4003 Pls
+5077 4003 Pls
+5077 4004 Pls
+5076 4005 Pls
+5076 4006 Pls
+5075 4007 Pls
+5074 4008 Pls
+5074 4009 Pls
+5074 4009 Pls
+5074 4010 Pls
+5073 4011 Pls
+5073 4012 Pls
+5073 4013 Pls
+5073 4014 Pls
+5072 4014 Pls
+5072 4015 Pls
+5071 4016 Pls
+5070 4017 Pls
+5070 4018 Pls
+5070 4019 Pls
+5069 4019 Pls
+5069 4020 Pls
+5069 4021 Pls
+5069 4022 Pls
+5069 4023 Pls
+5069 4023 Pls
+5068 4024 Pls
+5067 4025 Pls
+5067 4026 Pls
+5067 4027 Pls
+5066 4027 Pls
+5066 4028 Pls
+5065 4029 Pls
+5065 4030 Pls
+5065 4031 Pls
+5065 4031 Pls
+5065 4032 Pls
+5064 4033 Pls
+5064 4034 Pls
+5063 4035 Pls
+5063 4035 Pls
+5063 4036 Pls
+5063 4037 Pls
+5063 4038 Pls
+5063 4039 Pls
+5062 4039 Pls
+5062 4040 Pls
+5062 4042 Pls
+5062 4043 Pls
+5061 4043 Pls
+5061 4044 Pls
+5061 4045 Pls
+5061 4046 Pls
+5061 4046 Pls
+5060 4047 Pls
+5059 4048 Pls
+5059 4049 Pls
+5058 4049 Pls
+5058 4050 Pls
+5058 4051 Pls
+5057 4052 Pls
+5057 4053 Pls
+5055 4053 Pls
+5055 4054 Pls
+5054 4055 Pls
+5054 4056 Pls
+5051 4056 Pls
+5051 4057 Pls
+5050 4058 Pls
+5050 4059 Pls
+5050 4059 Pls
+5050 4060 Pls
+5050 4061 Pls
+5049 4062 Pls
+5048 4062 Pls
+5047 4063 Pls
+5046 4064 Pls
+5046 4065 Pls
+5046 4065 Pls
+5046 4066 Pls
+5046 4067 Pls
+5045 4067 Pls
+5045 4068 Pls
+5045 4069 Pls
+5044 4070 Pls
+5044 4070 Pls
+5043 4071 Pls
+5043 4072 Pls
+5042 4073 Pls
+5042 4073 Pls
+5042 4075 Pls
+5042 4075 Pls
+5041 4076 Pls
+5039 4077 Pls
+5039 4078 Pls
+5038 4078 Pls
+5038 4079 Pls
+5038 4080 Pls
+5037 4081 Pls
+5037 4081 Pls
+5036 4082 Pls
+5036 4083 Pls
+5035 4083 Pls
+5034 4084 Pls
+5034 4085 Pls
+5033 4085 Pls
+5031 4086 Pls
+5031 4087 Pls
+5030 4088 Pls
+5030 4088 Pls
+5030 4089 Pls
+5030 4090 Pls
+5029 4090 Pls
+5029 4091 Pls
+5029 4092 Pls
+5028 4092 Pls
+5028 4093 Pls
+5027 4094 Pls
+5027 4095 Pls
+5026 4095 Pls
+5026 4096 Pls
+5026 4097 Pls
+5026 4097 Pls
+5025 4098 Pls
+5025 4099 Pls
+5025 4099 Pls
+5024 4100 Pls
+5024 4101 Pls
+5023 4101 Pls
+5023 4102 Pls
+5023 4103 Pls
+5022 4103 Pls
+5022 4104 Pls
+5021 4105 Pls
+5021 4105 Pls
+5021 4106 Pls
+5020 4107 Pls
+5020 4108 Pls
+5020 4108 Pls
+5020 4109 Pls
+5019 4110 Pls
+5018 4110 Pls
+5017 4111 Pls
+5017 4112 Pls
+5017 4112 Pls
+5017 4113 Pls
+5016 4114 Pls
+5016 4114 Pls
+5016 4115 Pls
+5015 4116 Pls
+5015 4116 Pls
+5015 4117 Pls
+5014 4118 Pls
+5014 4119 Pls
+5013 4119 Pls
+5013 4121 Pls
+5012 4121 Pls
+5012 4122 Pls
+5012 4123 Pls
+5011 4123 Pls
+5011 4124 Pls
+5010 4125 Pls
+5010 4125 Pls
+5009 4126 Pls
+5009 4127 Pls
+5009 4127 Pls
+5008 4128 Pls
+5008 4129 Pls
+5008 4129 Pls
+5008 4130 Pls
+5008 4130 Pls
+5008 4131 Pls
+5007 4132 Pls
+5007 4132 Pls
+5007 4133 Pls
+5007 4134 Pls
+5005 4134 Pls
+5004 4135 Pls
+5004 4135 Pls
+5004 4136 Pls
+5004 4137 Pls
+5003 4137 Pls
+5003 4138 Pls
+5003 4139 Pls
+5003 4139 Pls
+5003 4140 Pls
+5002 4141 Pls
+5002 4141 Pls
+5002 4142 Pls
+5001 4142 Pls
+5001 4143 Pls
+5001 4144 Pls
+5001 4144 Pls
+5001 4145 Pls
+5000 4145 Pls
+5000 4146 Pls
+5000 4147 Pls
+5000 4147 Pls
+4999 4148 Pls
+4999 4149 Pls
+4999 4149 Pls
+4998 4150 Pls
+4998 4150 Pls
+4997 4151 Pls
+4997 4152 Pls
+4997 4152 Pls
+4996 4153 Pls
+4996 4153 Pls
+4994 4155 Pls
+4994 4156 Pls
+4993 4156 Pls
+4993 4157 Pls
+4992 4158 Pls
+4992 4158 Pls
+4991 4159 Pls
+4991 4159 Pls
+4989 4160 Pls
+4989 4161 Pls
+4988 4161 Pls
+4988 4162 Pls
+4987 4162 Pls
+4986 4163 Pls
+4985 4164 Pls
+4985 4164 Pls
+4985 4165 Pls
+4984 4165 Pls
+4983 4166 Pls
+4983 4167 Pls
+4983 4167 Pls
+4983 4168 Pls
+4983 4169 Pls
+4983 4169 Pls
+4982 4170 Pls
+4982 4171 Pls
+4981 4171 Pls
+4981 4172 Pls
+4979 4172 Pls
+4979 4173 Pls
+4977 4174 Pls
+4977 4174 Pls
+4977 4175 Pls
+4976 4175 Pls
+4975 4176 Pls
+4975 4176 Pls
+4975 4177 Pls
+4975 4178 Pls
+4974 4178 Pls
+4974 4179 Pls
+4974 4179 Pls
+4974 4180 Pls
+4974 4180 Pls
+4973 4181 Pls
+4972 4182 Pls
+4971 4182 Pls
+4971 4183 Pls
+4971 4183 Pls
+4970 4184 Pls
+4970 4184 Pls
+4970 4185 Pls
+4970 4186 Pls
+4970 4186 Pls
+4970 4187 Pls
+4969 4187 Pls
+4969 4188 Pls
+4967 4188 Pls
+4967 4189 Pls
+4966 4189 Pls
+4966 4190 Pls
+4965 4191 Pls
+4963 4191 Pls
+4963 4192 Pls
+4962 4192 Pls
+4962 4193 Pls
+4962 4193 Pls
+4962 4194 Pls
+4962 4194 Pls
+4961 4195 Pls
+4961 4196 Pls
+4960 4196 Pls
+4960 4197 Pls
+4958 4197 Pls
+4958 4198 Pls
+4958 4198 Pls
+4958 4199 Pls
+4957 4199 Pls
+4957 4200 Pls
+4957 4200 Pls
+4957 4201 Pls
+4956 4202 Pls
+4956 4202 Pls
+4956 4203 Pls
+4955 4203 Pls
+4954 4204 Pls
+4952 4204 Pls
+4952 4205 Pls
+4952 4205 Pls
+4952 4206 Pls
+4951 4206 Pls
+4950 4207 Pls
+4950 4207 Pls
+4949 4208 Pls
+4949 4209 Pls
+4949 4209 Pls
+4948 4210 Pls
+4948 4210 Pls
+4947 4211 Pls
+4946 4211 Pls
+4946 4212 Pls
+4946 4212 Pls
+4945 4213 Pls
+4945 4213 Pls
+4944 4214 Pls
+4944 4214 Pls
+4942 4215 Pls
+4941 4215 Pls
+4941 4216 Pls
+4941 4217 Pls
+4940 4217 Pls
+4938 4218 Pls
+4938 4218 Pls
+4938 4219 Pls
+4937 4219 Pls
+4937 4220 Pls
+4936 4220 Pls
+4935 4221 Pls
+4935 4221 Pls
+4934 4222 Pls
+4934 4222 Pls
+4933 4223 Pls
+4933 4224 Pls
+4933 4225 Pls
+4932 4225 Pls
+4932 4226 Pls
+4932 4226 Pls
+4931 4227 Pls
+4931 4227 Pls
+4931 4228 Pls
+4930 4228 Pls
+4929 4229 Pls
+4929 4229 Pls
+4928 4230 Pls
+4926 4230 Pls
+4926 4231 Pls
+4925 4231 Pls
+4925 4232 Pls
+4925 4232 Pls
+4924 4233 Pls
+4922 4233 Pls
+4922 4234 Pls
+4921 4235 Pls
+4921 4235 Pls
+4920 4236 Pls
+4920 4236 Pls
+4919 4237 Pls
+4918 4237 Pls
+4917 4238 Pls
+4917 4238 Pls
+4917 4239 Pls
+4917 4239 Pls
+4916 4240 Pls
+4916 4240 Pls
+4915 4241 Pls
+4915 4241 Pls
+4914 4242 Pls
+4914 4242 Pls
+4914 4242 Pls
+4913 4243 Pls
+4913 4243 Pls
+4913 4244 Pls
+4912 4244 Pls
+4911 4245 Pls
+4911 4245 Pls
+4910 4246 Pls
+4910 4246 Pls
+4909 4247 Pls
+4909 4247 Pls
+4908 4248 Pls
+4908 4248 Pls
+4907 4249 Pls
+4905 4249 Pls
+4905 4250 Pls
+4903 4250 Pls
+4903 4251 Pls
+4903 4251 Pls
+4901 4252 Pls
+4901 4252 Pls
+4901 4253 Pls
+4899 4253 Pls
+4899 4254 Pls
+4898 4254 Pls
+4898 4255 Pls
+4898 4255 Pls
+4897 4256 Pls
+4896 4256 Pls
+4896 4257 Pls
+4895 4257 Pls
+4895 4258 Pls
+4895 4258 Pls
+4895 4259 Pls
+4893 4259 Pls
+4893 4259 Pls
+4890 4260 Pls
+4890 4260 Pls
+4890 4261 Pls
+4889 4261 Pls
+4888 4262 Pls
+4888 4262 Pls
+4887 4263 Pls
+4887 4263 Pls
+4887 4264 Pls
+4885 4264 Pls
+4885 4265 Pls
+4884 4265 Pls
+4884 4266 Pls
+4884 4266 Pls
+4883 4267 Pls
+4882 4267 Pls
+4882 4268 Pls
+4882 4268 Pls
+4880 4268 Pls
+4880 4269 Pls
+4880 4269 Pls
+4880 4270 Pls
+4879 4270 Pls
+4879 4271 Pls
+4878 4271 Pls
+4877 4272 Pls
+4876 4272 Pls
+4873 4273 Pls
+4872 4274 Pls
+4872 4274 Pls
+4872 4274 Pls
+4868 4275 Pls
+4868 4275 Pls
+4867 4276 Pls
+4867 4276 Pls
+4867 4277 Pls
+4865 4277 Pls
+4865 4278 Pls
+4864 4278 Pls
+4864 4279 Pls
+4864 4279 Pls
+4864 4280 Pls
+4862 4280 Pls
+4862 4280 Pls
+4862 4281 Pls
+4861 4281 Pls
+4861 4282 Pls
+4861 4282 Pls
+4861 4283 Pls
+4860 4283 Pls
+4860 4284 Pls
+4860 4284 Pls
+4860 4284 Pls
+4859 4285 Pls
+4859 4285 Pls
+4859 4286 Pls
+4857 4286 Pls
+4855 4287 Pls
+4854 4287 Pls
+4853 4288 Pls
+4853 4288 Pls
+4853 4289 Pls
+4852 4289 Pls
+4851 4289 Pls
+4850 4290 Pls
+4849 4291 Pls
+4848 4291 Pls
+4848 4292 Pls
+4848 4292 Pls
+4848 4293 Pls
+4848 4293 Pls
+4847 4293 Pls
+4847 4294 Pls
+4845 4294 Pls
+4845 4295 Pls
+4845 4295 Pls
+4845 4296 Pls
+4844 4296 Pls
+4844 4296 Pls
+4843 4297 Pls
+4842 4297 Pls
+4841 4298 Pls
+4839 4298 Pls
+4838 4299 Pls
+4838 4299 Pls
+4837 4300 Pls
+4836 4300 Pls
+4836 4300 Pls
+4836 4301 Pls
+4836 4301 Pls
+4835 4302 Pls
+4833 4302 Pls
+4832 4303 Pls
+4832 4303 Pls
+4830 4303 Pls
+4830 4304 Pls
+4829 4304 Pls
+4829 4305 Pls
+4827 4305 Pls
+4826 4306 Pls
+4826 4306 Pls
+4825 4306 Pls
+4825 4307 Pls
+4824 4307 Pls
+4823 4308 Pls
+4822 4308 Pls
+4822 4309 Pls
+4821 4310 Pls
+4821 4310 Pls
+4821 4311 Pls
+4821 4312 Pls
+4821 4312 Pls
+4820 4312 Pls
+4820 4313 Pls
+4819 4313 Pls
+4818 4314 Pls
+4818 4314 Pls
+4817 4315 Pls
+4816 4315 Pls
+4816 4315 Pls
+4816 4316 Pls
+4816 4316 Pls
+4815 4317 Pls
+4814 4317 Pls
+4814 4317 Pls
+4813 4318 Pls
+4811 4318 Pls
+4811 4319 Pls
+4810 4319 Pls
+4810 4320 Pls
+4808 4320 Pls
+4808 4321 Pls
+4807 4321 Pls
+4807 4322 Pls
+4807 4322 Pls
+4806 4323 Pls
+4806 4323 Pls
+4806 4324 Pls
+4804 4324 Pls
+4804 4324 Pls
+4803 4325 Pls
+4802 4326 Pls
+4802 4326 Pls
+4801 4327 Pls
+4800 4327 Pls
+4800 4328 Pls
+4800 4328 Pls
+4799 4329 Pls
+4798 4329 Pls
+4797 4329 Pls
+4796 4330 Pls
+4796 4330 Pls
+4796 4331 Pls
+4795 4331 Pls
+4794 4331 Pls
+4794 4332 Pls
+4792 4332 Pls
+4792 4333 Pls
+4792 4333 Pls
+4791 4333 Pls
+4790 4334 Pls
+4789 4334 Pls
+4789 4335 Pls
+4788 4335 Pls
+4788 4335 Pls
+4788 4336 Pls
+4788 4336 Pls
+4786 4337 Pls
+4786 4337 Pls
+4784 4337 Pls
+4783 4338 Pls
+4783 4338 Pls
+4783 4339 Pls
+4782 4339 Pls
+4782 4339 Pls
+4778 4340 Pls
+4778 4341 Pls
+4777 4341 Pls
+4777 4342 Pls
+4776 4342 Pls
+4774 4343 Pls
+4774 4343 Pls
+4774 4343 Pls
+4774 4344 Pls
+4773 4344 Pls
+4771 4345 Pls
+4771 4345 Pls
+4769 4345 Pls
+4769 4346 Pls
+4768 4346 Pls
+4767 4347 Pls
+4766 4347 Pls
+4766 4347 Pls
+4766 4348 Pls
+4766 4348 Pls
+4766 4348 Pls
+4765 4349 Pls
+4765 4350 Pls
+4764 4350 Pls
+4764 4350 Pls
+4764 4351 Pls
+4763 4351 Pls
+4763 4352 Pls
+4762 4352 Pls
+4762 4352 Pls
+4762 4353 Pls
+4762 4353 Pls
+4761 4354 Pls
+4761 4354 Pls
+4760 4354 Pls
+4760 4355 Pls
+4759 4355 Pls
+4759 4355 Pls
+4758 4356 Pls
+4757 4356 Pls
+4757 4357 Pls
+4756 4357 Pls
+4756 4357 Pls
+4754 4358 Pls
+4754 4358 Pls
+4753 4358 Pls
+4753 4359 Pls
+4752 4359 Pls
+4752 4360 Pls
+4751 4360 Pls
+4751 4361 Pls
+4751 4361 Pls
+4750 4362 Pls
+4750 4362 Pls
+4749 4362 Pls
+4749 4363 Pls
+4748 4363 Pls
+4748 4363 Pls
+4745 4364 Pls
+4744 4365 Pls
+4742 4365 Pls
+4741 4366 Pls
+4740 4366 Pls
+4740 4366 Pls
+4738 4367 Pls
+4737 4369 Pls
+4737 4369 Pls
+4736 4370 Pls
+4736 4370 Pls
+4736 4371 Pls
+4735 4371 Pls
+4735 4372 Pls
+4733 4372 Pls
+4732 4372 Pls
+4728 4373 Pls
+4728 4373 Pls
+4727 4373 Pls
+4727 4374 Pls
+4726 4374 Pls
+4726 4375 Pls
+4724 4375 Pls
+4723 4375 Pls
+4722 4376 Pls
+4721 4376 Pls
+4721 4376 Pls
+4719 4377 Pls
+4719 4377 Pls
+4719 4377 Pls
+4719 4378 Pls
+4718 4378 Pls
+4717 4379 Pls
+4717 4380 Pls
+4717 4381 Pls
+4717 4381 Pls
+4716 4381 Pls
+4716 4382 Pls
+4715 4382 Pls
+4715 4383 Pls
+4714 4383 Pls
+4713 4383 Pls
+4713 4384 Pls
+4713 4384 Pls
+4711 4384 Pls
+4711 4385 Pls
+4711 4385 Pls
+4710 4385 Pls
+4709 4386 Pls
+4708 4387 Pls
+4708 4387 Pls
+4707 4387 Pls
+4707 4388 Pls
+4707 4388 Pls
+4706 4389 Pls
+4706 4389 Pls
+4704 4389 Pls
+4704 4390 Pls
+4704 4390 Pls
+4702 4390 Pls
+4702 4391 Pls
+4702 4391 Pls
+4702 4391 Pls
+4701 4392 Pls
+4700 4392 Pls
+4700 4393 Pls
+4699 4393 Pls
+4699 4393 Pls
+4698 4394 Pls
+4697 4394 Pls
+4696 4394 Pls
+4696 4395 Pls
+4696 4395 Pls
+4693 4395 Pls
+4692 4396 Pls
+4692 4396 Pls
+4692 4396 Pls
+4691 4397 Pls
+4690 4397 Pls
+4689 4397 Pls
+4686 4398 Pls
+4686 4398 Pls
+4685 4399 Pls
+4684 4399 Pls
+4683 4399 Pls
+4682 4400 Pls
+4682 4400 Pls
+4681 4400 Pls
+4678 4401 Pls
+4677 4401 Pls
+4677 4402 Pls
+4675 4402 Pls
+4674 4402 Pls
+4674 4403 Pls
+4673 4403 Pls
+4673 4404 Pls
+4672 4404 Pls
+4671 4405 Pls
+4671 4405 Pls
+4671 4405 Pls
+4668 4406 Pls
+4667 4406 Pls
+4665 4407 Pls
+4665 4408 Pls
+4664 4408 Pls
+4664 4408 Pls
+4663 4409 Pls
+4663 4409 Pls
+4663 4409 Pls
+4662 4410 Pls
+4662 4410 Pls
+4662 4411 Pls
+4662 4411 Pls
+4662 4411 Pls
+4661 4412 Pls
+4661 4412 Pls
+4660 4413 Pls
+4659 4413 Pls
+4659 4413 Pls
+4658 4414 Pls
+4658 4414 Pls
+4658 4414 Pls
+4657 4415 Pls
+4656 4415 Pls
+4656 4415 Pls
+4655 4416 Pls
+4655 4416 Pls
+4655 4416 Pls
+4655 4417 Pls
+4655 4417 Pls
+4654 4418 Pls
+4654 4418 Pls
+4653 4418 Pls
+4653 4419 Pls
+4651 4419 Pls
+4650 4419 Pls
+4650 4420 Pls
+4650 4420 Pls
+4649 4420 Pls
+4647 4421 Pls
+4647 4421 Pls
+4647 4421 Pls
+4646 4422 Pls
+4646 4422 Pls
+4645 4422 Pls
+4644 4423 Pls
+4644 4423 Pls
+4644 4423 Pls
+4643 4424 Pls
+4642 4424 Pls
+4642 4424 Pls
+4640 4425 Pls
+4639 4425 Pls
+4639 4425 Pls
+4638 4425 Pls
+4637 4426 Pls
+4636 4427 Pls
+4636 4427 Pls
+4635 4428 Pls
+4634 4428 Pls
+4633 4428 Pls
+4632 4429 Pls
+4630 4429 Pls
+4628 4430 Pls
+4626 4430 Pls
+4625 4431 Pls
+4625 4431 Pls
+4624 4432 Pls
+4622 4432 Pls
+4622 4432 Pls
+4621 4433 Pls
+4618 4433 Pls
+4618 4433 Pls
+4617 4434 Pls
+4617 4434 Pls
+4616 4434 Pls
+4616 4435 Pls
+4616 4435 Pls
+4615 4436 Pls
+4615 4436 Pls
+4615 4436 Pls
+4613 4436 Pls
+4612 4437 Pls
+4611 4437 Pls
+4611 4437 Pls
+4610 4438 Pls
+4609 4438 Pls
+4609 4439 Pls
+4608 4439 Pls
+4607 4439 Pls
+4607 4440 Pls
+4606 4440 Pls
+4604 4440 Pls
+4604 4441 Pls
+4604 4441 Pls
+4604 4442 Pls
+4603 4442 Pls
+4602 4442 Pls
+4602 4442 Pls
+4602 4443 Pls
+4602 4443 Pls
+4599 4443 Pls
+4597 4444 Pls
+4596 4444 Pls
+4595 4444 Pls
+4595 4445 Pls
+4595 4445 Pls
+4594 4445 Pls
+4593 4446 Pls
+4593 4446 Pls
+4592 4446 Pls
+4590 4447 Pls
+4590 4447 Pls
+4589 4448 Pls
+4589 4448 Pls
+4588 4449 Pls
+4587 4449 Pls
+4586 4449 Pls
+4586 4450 Pls
+4585 4450 Pls
+4583 4450 Pls
+4582 4451 Pls
+4581 4451 Pls
+4580 4452 Pls
+4580 4452 Pls
+4579 4453 Pls
+4579 4453 Pls
+4578 4453 Pls
+4577 4454 Pls
+4576 4454 Pls
+4575 4454 Pls
+4574 4455 Pls
+4574 4455 Pls
+4573 4455 Pls
+4573 4456 Pls
+4573 4456 Pls
+4572 4456 Pls
+4571 4457 Pls
+4571 4457 Pls
+4569 4458 Pls
+4568 4458 Pls
+4568 4459 Pls
+4568 4459 Pls
+4568 4459 Pls
+4568 4460 Pls
+4567 4460 Pls
+4567 4460 Pls
+4567 4461 Pls
+4565 4461 Pls
+4564 4461 Pls
+4564 4462 Pls
+4563 4462 Pls
+4563 4462 Pls
+4563 4463 Pls
+4562 4463 Pls
+4562 4463 Pls
+4561 4463 Pls
+4561 4464 Pls
+4561 4464 Pls
+4560 4464 Pls
+4560 4465 Pls
+4558 4465 Pls
+4558 4465 Pls
+4557 4465 Pls
+4557 4466 Pls
+4556 4466 Pls
+4555 4466 Pls
+4555 4467 Pls
+4555 4467 Pls
+4555 4467 Pls
+4555 4468 Pls
+4555 4468 Pls
+4553 4468 Pls
+4553 4469 Pls
+4552 4469 Pls
+4552 4470 Pls
+4552 4470 Pls
+4551 4470 Pls
+4551 4471 Pls
+4550 4471 Pls
+4549 4471 Pls
+4549 4471 Pls
+4548 4472 Pls
+4548 4472 Pls
+4548 4472 Pls
+4548 4473 Pls
+4547 4473 Pls
+4546 4473 Pls
+4545 4473 Pls
+4545 4474 Pls
+4544 4474 Pls
+4544 4474 Pls
+4543 4475 Pls
+4542 4475 Pls
+4542 4476 Pls
+4542 4476 Pls
+4541 4476 Pls
+4540 4476 Pls
+4540 4477 Pls
+4539 4477 Pls
+4537 4477 Pls
+4537 4478 Pls
+4536 4478 Pls
+4536 4478 Pls
+4535 4478 Pls
+4535 4479 Pls
+4534 4479 Pls
+4534 4480 Pls
+4533 4480 Pls
+4532 4481 Pls
+4532 4481 Pls
+4532 4481 Pls
+4531 4482 Pls
+4531 4482 Pls
+4530 4483 Pls
+4529 4483 Pls
+4528 4483 Pls
+4528 4484 Pls
+4528 4484 Pls
+4528 4484 Pls
+4527 4485 Pls
+4527 4485 Pls
+4527 4485 Pls
+4527 4485 Pls
+4527 4486 Pls
+4526 4486 Pls
+4526 4486 Pls
+4526 4487 Pls
+4525 4487 Pls
+4524 4487 Pls
+4523 4488 Pls
+4523 4488 Pls
+4523 4488 Pls
+4522 4489 Pls
+4521 4489 Pls
+4521 4489 Pls
+4520 4489 Pls
+4520 4490 Pls
+4520 4490 Pls
+4520 4490 Pls
+4519 4490 Pls
+4517 4491 Pls
+4516 4491 Pls
+4516 4491 Pls
+4515 4492 Pls
+4515 4492 Pls
+4514 4492 Pls
+4514 4493 Pls
+4513 4493 Pls
+4513 4493 Pls
+4513 4494 Pls
+4512 4494 Pls
+4512 4494 Pls
+4512 4495 Pls
+4511 4495 Pls
+4510 4495 Pls
+4510 4496 Pls
+4509 4496 Pls
+4509 4496 Pls
+4509 4496 Pls
+4507 4497 Pls
+4506 4497 Pls
+4506 4497 Pls
+4505 4497 Pls
+4502 4498 Pls
+4502 4498 Pls
+4501 4498 Pls
+4500 4499 Pls
+4500 4499 Pls
+4499 4499 Pls
+4499 4499 Pls
+4498 4500 Pls
+4497 4500 Pls
+4497 4501 Pls
+4497 4501 Pls
+4496 4501 Pls
+4495 4501 Pls
+4495 4502 Pls
+4495 4502 Pls
+4494 4502 Pls
+4494 4503 Pls
+4494 4503 Pls
+4493 4503 Pls
+4493 4504 Pls
+4492 4504 Pls
+4492 4504 Pls
+4491 4504 Pls
+4490 4505 Pls
+4490 4505 Pls
+4488 4505 Pls
+4488 4506 Pls
+4488 4506 Pls
+4487 4506 Pls
+4486 4507 Pls
+4486 4507 Pls
+4486 4507 Pls
+4485 4507 Pls
+4485 4508 Pls
+4484 4508 Pls
+4484 4508 Pls
+4484 4509 Pls
+4483 4509 Pls
+4481 4510 Pls
+4481 4511 Pls
+4481 4511 Pls
+4480 4511 Pls
+4480 4511 Pls
+4479 4512 Pls
+4479 4512 Pls
+4478 4512 Pls
+4478 4513 Pls
+4477 4513 Pls
+4477 4513 Pls
+4477 4513 Pls
+4477 4514 Pls
+4476 4514 Pls
+4476 4514 Pls
+4475 4514 Pls
+4474 4515 Pls
+4473 4515 Pls
+4473 4515 Pls
+4473 4515 Pls
+4472 4516 Pls
+4471 4516 Pls
+4471 4517 Pls
+4470 4517 Pls
+4470 4517 Pls
+4470 4517 Pls
+4468 4518 Pls
+4468 4518 Pls
+4467 4518 Pls
+4467 4518 Pls
+4465 4519 Pls
+4464 4519 Pls
+4463 4519 Pls
+4463 4520 Pls
+4463 4520 Pls
+4461 4520 Pls
+4460 4521 Pls
+4460 4521 Pls
+4460 4521 Pls
+4459 4522 Pls
+4459 4522 Pls
+4458 4522 Pls
+4458 4522 Pls
+4457 4523 Pls
+4457 4523 Pls
+4457 4523 Pls
+4455 4523 Pls
+4455 4524 Pls
+4454 4524 Pls
+4453 4524 Pls
+4452 4525 Pls
+4452 4525 Pls
+4452 4525 Pls
+4451 4525 Pls
+4451 4526 Pls
+4450 4526 Pls
+4449 4527 Pls
+4449 4527 Pls
+4448 4527 Pls
+4448 4528 Pls
+4448 4528 Pls
+4447 4528 Pls
+4446 4528 Pls
+4446 4529 Pls
+4445 4529 Pls
+4445 4529 Pls
+4445 4529 Pls
+4445 4530 Pls
+4444 4530 Pls
+4442 4530 Pls
+4442 4530 Pls
+4440 4531 Pls
+4440 4531 Pls
+4439 4531 Pls
+4438 4531 Pls
+4437 4532 Pls
+4437 4532 Pls
+4436 4532 Pls
+4436 4532 Pls
+4436 4533 Pls
+4435 4533 Pls
+4435 4533 Pls
+4434 4534 Pls
+4433 4534 Pls
+4433 4534 Pls
+4432 4535 Pls
+4431 4535 Pls
+4431 4535 Pls
+4431 4535 Pls
+4430 4536 Pls
+4430 4536 Pls
+4429 4537 Pls
+4429 4537 Pls
+4429 4537 Pls
+4428 4538 Pls
+4428 4538 Pls
+4427 4538 Pls
+4424 4539 Pls
+4424 4539 Pls
+4424 4540 Pls
+4423 4540 Pls
+4422 4540 Pls
+4422 4541 Pls
+4422 4541 Pls
+4420 4541 Pls
+4419 4542 Pls
+4419 4542 Pls
+4418 4542 Pls
+4418 4542 Pls
+4417 4543 Pls
+4417 4543 Pls
+4417 4543 Pls
+4416 4543 Pls
+4416 4544 Pls
+4415 4544 Pls
+4414 4545 Pls
+4414 4545 Pls
+4413 4545 Pls
+4413 4546 Pls
+4412 4546 Pls
+4412 4546 Pls
+4411 4547 Pls
+4411 4547 Pls
+4410 4547 Pls
+4409 4547 Pls
+4409 4548 Pls
+4409 4548 Pls
+4407 4548 Pls
+4407 4548 Pls
+4406 4549 Pls
+4405 4550 Pls
+4404 4550 Pls
+4404 4550 Pls
+4403 4551 Pls
+4402 4551 Pls
+4402 4551 Pls
+4401 4552 Pls
+4400 4552 Pls
+4400 4553 Pls
+4399 4553 Pls
+4399 4554 Pls
+4398 4554 Pls
+4398 4554 Pls
+4398 4555 Pls
+4397 4555 Pls
+4395 4555 Pls
+4395 4556 Pls
+4394 4556 Pls
+4393 4557 Pls
+4392 4557 Pls
+4392 4557 Pls
+4392 4558 Pls
+4390 4558 Pls
+4389 4558 Pls
+4389 4559 Pls
+4389 4559 Pls
+4388 4559 Pls
+4388 4559 Pls
+4388 4560 Pls
+4386 4560 Pls
+4386 4560 Pls
+4385 4560 Pls
+4385 4561 Pls
+4384 4561 Pls
+4384 4561 Pls
+4383 4562 Pls
+4383 4562 Pls
+4382 4563 Pls
+4382 4563 Pls
+4381 4563 Pls
+4381 4563 Pls
+4379 4563 Pls
+4379 4564 Pls
+4379 4564 Pls
+4378 4564 Pls
+4377 4564 Pls
+4376 4566 Pls
+4376 4566 Pls
+4376 4567 Pls
+4375 4567 Pls
+4374 4567 Pls
+4373 4568 Pls
+4373 4568 Pls
+4372 4568 Pls
+4371 4568 Pls
+4371 4569 Pls
+4370 4569 Pls
+4370 4569 Pls
+4370 4570 Pls
+4370 4570 Pls
+4369 4570 Pls
+4367 4570 Pls
+4366 4571 Pls
+4364 4571 Pls
+4364 4571 Pls
+4363 4571 Pls
+4363 4572 Pls
+4362 4572 Pls
+4361 4572 Pls
+4361 4572 Pls
+4360 4572 Pls
+4359 4573 Pls
+4358 4573 Pls
+4358 4573 Pls
+4357 4573 Pls
+4356 4574 Pls
+4354 4574 Pls
+4353 4574 Pls
+4353 4575 Pls
+4351 4575 Pls
+4351 4576 Pls
+4350 4576 Pls
+4349 4576 Pls
+4348 4576 Pls
+4348 4576 Pls
+4347 4577 Pls
+4347 4577 Pls
+4347 4577 Pls
+4346 4577 Pls
+4345 4578 Pls
+4345 4578 Pls
+4344 4578 Pls
+4344 4578 Pls
+4343 4579 Pls
+4343 4579 Pls
+4343 4579 Pls
+4342 4579 Pls
+4341 4580 Pls
+4341 4580 Pls
+4340 4581 Pls
+4340 4581 Pls
+4340 4581 Pls
+4339 4581 Pls
+4339 4582 Pls
+4337 4582 Pls
+4337 4582 Pls
+4336 4582 Pls
+4336 4583 Pls
+4335 4583 Pls
+4335 4583 Pls
+4335 4583 Pls
+4335 4584 Pls
+4334 4584 Pls
+4334 4584 Pls
+4333 4584 Pls
+4331 4585 Pls
+4329 4585 Pls
+4328 4585 Pls
+4327 4586 Pls
+4326 4586 Pls
+4325 4586 Pls
+4325 4586 Pls
+4323 4587 Pls
+4323 4587 Pls
+4322 4587 Pls
+4322 4588 Pls
+4321 4588 Pls
+4320 4588 Pls
+4319 4588 Pls
+4318 4589 Pls
+4317 4589 Pls
+4317 4590 Pls
+4315 4590 Pls
+4314 4590 Pls
+4313 4591 Pls
+4313 4591 Pls
+4312 4591 Pls
+4312 4591 Pls
+4311 4592 Pls
+4309 4592 Pls
+4308 4592 Pls
+4308 4593 Pls
+4306 4593 Pls
+4305 4593 Pls
+4304 4593 Pls
+4304 4594 Pls
+4302 4594 Pls
+4300 4594 Pls
+4299 4594 Pls
+4298 4594 Pls
+4298 4595 Pls
+4298 4595 Pls
+4297 4595 Pls
+4296 4595 Pls
+4296 4596 Pls
+4295 4596 Pls
+4294 4597 Pls
+4293 4597 Pls
+4292 4597 Pls
+4291 4598 Pls
+4290 4598 Pls
+4290 4598 Pls
+4290 4598 Pls
+4289 4599 Pls
+4287 4599 Pls
+4287 4599 Pls
+4286 4600 Pls
+4286 4600 Pls
+4285 4600 Pls
+4283 4600 Pls
+4283 4601 Pls
+4283 4601 Pls
+4283 4601 Pls
+4283 4602 Pls
+4282 4602 Pls
+4282 4602 Pls
+4282 4602 Pls
+4281 4602 Pls
+4281 4603 Pls
+4280 4603 Pls
+4280 4603 Pls
+4279 4604 Pls
+4279 4604 Pls
+4278 4604 Pls
+4277 4604 Pls
+4276 4605 Pls
+4276 4605 Pls
+4272 4605 Pls
+4271 4605 Pls
+4270 4605 Pls
+4269 4606 Pls
+4269 4606 Pls
+4268 4606 Pls
+4266 4606 Pls
+4266 4607 Pls
+4266 4607 Pls
+4265 4607 Pls
+4265 4607 Pls
+4265 4608 Pls
+4264 4608 Pls
+4262 4608 Pls
+4262 4608 Pls
+4262 4609 Pls
+4261 4609 Pls
+4261 4609 Pls
+4260 4609 Pls
+4259 4609 Pls
+4259 4610 Pls
+4258 4610 Pls
+4257 4610 Pls
+4255 4610 Pls
+4254 4610 Pls
+4254 4611 Pls
+4253 4611 Pls
+4251 4611 Pls
+4251 4611 Pls
+4251 4612 Pls
+4250 4612 Pls
+4248 4612 Pls
+4247 4612 Pls
+4247 4613 Pls
+4246 4613 Pls
+4246 4613 Pls
+4245 4613 Pls
+4245 4613 Pls
+4245 4614 Pls
+4244 4614 Pls
+4244 4614 Pls
+4244 4615 Pls
+4243 4615 Pls
+4241 4615 Pls
+4241 4615 Pls
+4241 4615 Pls
+4240 4616 Pls
+4240 4616 Pls
+4239 4616 Pls
+4238 4616 Pls
+4237 4616 Pls
+4236 4617 Pls
+4235 4617 Pls
+4235 4617 Pls
+4235 4617 Pls
+4235 4617 Pls
+4234 4618 Pls
+4234 4618 Pls
+4232 4618 Pls
+4230 4619 Pls
+4230 4620 Pls
+4229 4620 Pls
+4229 4620 Pls
+4228 4620 Pls
+4227 4621 Pls
+4226 4621 Pls
+4225 4621 Pls
+4224 4621 Pls
+4224 4622 Pls
+4223 4622 Pls
+4221 4622 Pls
+4221 4623 Pls
+4221 4623 Pls
+4220 4623 Pls
+4219 4623 Pls
+4218 4624 Pls
+4215 4624 Pls
+4213 4624 Pls
+4212 4625 Pls
+4212 4625 Pls
+4211 4625 Pls
+4209 4626 Pls
+4209 4626 Pls
+4208 4626 Pls
+4208 4627 Pls
+4207 4627 Pls
+4206 4627 Pls
+4206 4627 Pls
+4205 4627 Pls
+4204 4628 Pls
+4203 4628 Pls
+4202 4628 Pls
+4201 4628 Pls
+4198 4629 Pls
+4196 4630 Pls
+4196 4630 Pls
+4196 4630 Pls
+4195 4630 Pls
+4194 4630 Pls
+4193 4631 Pls
+4192 4631 Pls
+4191 4631 Pls
+4191 4631 Pls
+4189 4631 Pls
+4188 4632 Pls
+4187 4632 Pls
+4187 4632 Pls
+4186 4632 Pls
+4185 4633 Pls
+4185 4633 Pls
+4183 4634 Pls
+4183 4634 Pls
+4183 4634 Pls
+4182 4634 Pls
+4180 4634 Pls
+4179 4635 Pls
+4179 4635 Pls
+4178 4635 Pls
+4178 4635 Pls
+4175 4636 Pls
+4175 4636 Pls
+4174 4636 Pls
+4174 4636 Pls
+4173 4636 Pls
+4171 4637 Pls
+4170 4637 Pls
+4169 4638 Pls
+4168 4638 Pls
+4166 4638 Pls
+4165 4638 Pls
+4164 4638 Pls
+4164 4639 Pls
+4163 4639 Pls
+4162 4639 Pls
+4159 4640 Pls
+4159 4640 Pls
+4158 4640 Pls
+4155 4640 Pls
+4153 4641 Pls
+4152 4641 Pls
+4151 4641 Pls
+4149 4642 Pls
+4147 4642 Pls
+4146 4642 Pls
+4144 4642 Pls
+4144 4642 Pls
+4143 4643 Pls
+4141 4643 Pls
+4141 4643 Pls
+4140 4643 Pls
+4139 4644 Pls
+4138 4644 Pls
+4138 4644 Pls
+4135 4644 Pls
+4133 4644 Pls
+4132 4645 Pls
+4130 4645 Pls
+4128 4646 Pls
+4126 4646 Pls
+4125 4646 Pls
+4125 4646 Pls
+4123 4646 Pls
+4121 4647 Pls
+4119 4647 Pls
+4119 4647 Pls
+4119 4648 Pls
+4118 4648 Pls
+4114 4648 Pls
+4113 4648 Pls
+4110 4649 Pls
+4110 4649 Pls
+4108 4649 Pls
+4107 4650 Pls
+4106 4650 Pls
+4104 4650 Pls
+4104 4650 Pls
+4104 4650 Pls
+4103 4651 Pls
+4100 4651 Pls
+4099 4652 Pls
+4097 4652 Pls
+4096 4652 Pls
+4095 4653 Pls
+4094 4653 Pls
+4092 4653 Pls
+4092 4653 Pls
+4090 4654 Pls
+4089 4654 Pls
+4087 4655 Pls
+4087 4655 Pls
+4086 4655 Pls
+4084 4655 Pls
+4082 4655 Pls
+4080 4656 Pls
+4080 4656 Pls
+4079 4657 Pls
+4079 4657 Pls
+4079 4657 Pls
+4079 4657 Pls
+4077 4658 Pls
+4076 4658 Pls
+4074 4658 Pls
+4073 4659 Pls
+4072 4659 Pls
+4071 4659 Pls
+4069 4659 Pls
+4068 4659 Pls
+4068 4660 Pls
+4067 4660 Pls
+4062 4660 Pls
+4062 4660 Pls
+4060 4661 Pls
+4059 4662 Pls
+4056 4662 Pls
+4055 4662 Pls
+4049 4662 Pls
+4046 4663 Pls
+4044 4663 Pls
+4043 4663 Pls
+4042 4663 Pls
+4042 4664 Pls
+4041 4664 Pls
+4040 4664 Pls
+4040 4664 Pls
+4040 4664 Pls
+4039 4665 Pls
+4037 4665 Pls
+4035 4666 Pls
+4034 4666 Pls
+4031 4667 Pls
+4030 4667 Pls
+4026 4667 Pls
+4026 4667 Pls
+4025 4668 Pls
+4025 4668 Pls
+4023 4668 Pls
+4020 4668 Pls
+4018 4668 Pls
+4018 4669 Pls
+4016 4669 Pls
+4016 4669 Pls
+4016 4669 Pls
+4014 4670 Pls
+4011 4670 Pls
+4010 4671 Pls
+4009 4671 Pls
+4009 4671 Pls
+4008 4671 Pls
+4006 4672 Pls
+4005 4672 Pls
+4004 4672 Pls
+4004 4672 Pls
+4001 4673 Pls
+4001 4673 Pls
+4001 4673 Pls
+4001 4673 Pls
+4000 4674 Pls
+3997 4674 Pls
+3995 4674 Pls
+3994 4674 Pls
+3989 4674 Pls
+3987 4676 Pls
+3986 4676 Pls
+3985 4676 Pls
+3984 4676 Pls
+3983 4677 Pls
+3981 4677 Pls
+3980 4677 Pls
+3979 4677 Pls
+3978 4678 Pls
+3976 4678 Pls
+3972 4678 Pls
+3971 4679 Pls
+3971 4679 Pls
+3970 4679 Pls
+3969 4679 Pls
+3968 4679 Pls
+3963 4680 Pls
+3962 4680 Pls
+3961 4680 Pls
+3961 4680 Pls
+3960 4681 Pls
+3958 4681 Pls
+3957 4681 Pls
+3956 4681 Pls
+3954 4681 Pls
+3950 4682 Pls
+3949 4682 Pls
+3947 4682 Pls
+3947 4683 Pls
+3946 4683 Pls
+3946 4683 Pls
+3945 4684 Pls
+3943 4684 Pls
+3942 4684 Pls
+3941 4684 Pls
+3941 4684 Pls
+3940 4684 Pls
+3939 4685 Pls
+3939 4685 Pls
+3939 4685 Pls
+3936 4685 Pls
+3934 4686 Pls
+3933 4686 Pls
+3932 4686 Pls
+3930 4687 Pls
+3929 4687 Pls
+3928 4687 Pls
+3927 4687 Pls
+3922 4687 Pls
+3922 4688 Pls
+3920 4688 Pls
+3919 4688 Pls
+3917 4688 Pls
+3917 4688 Pls
+3916 4689 Pls
+3914 4689 Pls
+3914 4689 Pls
+3913 4689 Pls
+3912 4689 Pls
+3910 4689 Pls
+3908 4690 Pls
+3906 4690 Pls
+3905 4691 Pls
+3904 4691 Pls
+3903 4691 Pls
+3903 4691 Pls
+3903 4692 Pls
+3901 4692 Pls
+3898 4692 Pls
+3896 4692 Pls
+3894 4692 Pls
+3893 4693 Pls
+3889 4693 Pls
+3887 4693 Pls
+3886 4694 Pls
+3878 4694 Pls
+3873 4695 Pls
+3873 4695 Pls
+3872 4695 Pls
+3871 4696 Pls
+3869 4696 Pls
+3865 4696 Pls
+3863 4696 Pls
+3861 4697 Pls
+3858 4698 Pls
+3857 4698 Pls
+3852 4698 Pls
+3852 4698 Pls
+3852 4698 Pls
+3850 4699 Pls
+3847 4699 Pls
+3843 4699 Pls
+3842 4699 Pls
+3839 4699 Pls
+3835 4700 Pls
+3834 4700 Pls
+3833 4700 Pls
+3833 4700 Pls
+3831 4701 Pls
+3825 4701 Pls
+3825 4701 Pls
+3824 4702 Pls
+3823 4702 Pls
+3819 4702 Pls
+3818 4703 Pls
+3814 4703 Pls
+3809 4704 Pls
+3807 4704 Pls
+3806 4704 Pls
+3806 4705 Pls
+3800 4705 Pls
+3798 4705 Pls
+3797 4705 Pls
+3795 4706 Pls
+3795 4706 Pls
+3791 4706 Pls
+3788 4706 Pls
+3784 4707 Pls
+3783 4707 Pls
+3779 4707 Pls
+3772 4707 Pls
+3770 4708 Pls
+3768 4708 Pls
+3767 4708 Pls
+3763 4708 Pls
+3761 4708 Pls
+3757 4709 Pls
+3754 4709 Pls
+3753 4709 Pls
+3753 4710 Pls
+3753 4710 Pls
+3752 4710 Pls
+3751 4710 Pls
+3749 4710 Pls
+3742 4710 Pls
+3738 4711 Pls
+3733 4712 Pls
+3732 4712 Pls
+3731 4712 Pls
+3730 4712 Pls
+3729 4713 Pls
+3724 4713 Pls
+3722 4713 Pls
+3718 4713 Pls
+3717 4713 Pls
+3715 4714 Pls
+3712 4714 Pls
+3711 4714 Pls
+3710 4714 Pls
+3706 4715 Pls
+3705 4715 Pls
+3702 4715 Pls
+3698 4716 Pls
+3696 4717 Pls
+3693 4717 Pls
+3691 4717 Pls
+3688 4718 Pls
+3682 4718 Pls
+3681 4719 Pls
+3678 4719 Pls
+3677 4719 Pls
+3671 4720 Pls
+3670 4720 Pls
+3669 4720 Pls
+3668 4720 Pls
+3665 4720 Pls
+3664 4720 Pls
+3659 4721 Pls
+3654 4722 Pls
+3654 4723 Pls
+3648 4723 Pls
+3645 4723 Pls
+3644 4723 Pls
+3642 4723 Pls
+3641 4724 Pls
+3640 4724 Pls
+3640 4724 Pls
+3639 4724 Pls
+3638 4724 Pls
+3636 4724 Pls
+3635 4726 Pls
+3634 4726 Pls
+3633 4726 Pls
+3632 4726 Pls
+3632 4726 Pls
+3631 4727 Pls
+3630 4727 Pls
+3630 4727 Pls
+3626 4727 Pls
+3622 4727 Pls
+3613 4727 Pls
+3610 4729 Pls
+3606 4729 Pls
+3605 4729 Pls
+3600 4730 Pls
+3596 4730 Pls
+3593 4730 Pls
+3588 4730 Pls
+3586 4731 Pls
+3582 4732 Pls
+3580 4732 Pls
+3575 4732 Pls
+3573 4732 Pls
+3569 4732 Pls
+3568 4733 Pls
+3566 4733 Pls
+3562 4733 Pls
+3556 4735 Pls
+3555 4735 Pls
+3553 4736 Pls
+3549 4736 Pls
+3548 4736 Pls
+3544 4736 Pls
+3539 4736 Pls
+3535 4736 Pls
+3530 4738 Pls
+3528 4738 Pls
+3528 4739 Pls
+3526 4739 Pls
+3523 4739 Pls
+3521 4739 Pls
+3519 4740 Pls
+3518 4740 Pls
+3515 4740 Pls
+3514 4740 Pls
+3513 4740 Pls
+3512 4740 Pls
+3507 4741 Pls
+3501 4743 Pls
+3500 4743 Pls
+3497 4744 Pls
+3495 4744 Pls
+3492 4744 Pls
+3487 4744 Pls
+3483 4745 Pls
+3482 4745 Pls
+3480 4745 Pls
+3477 4746 Pls
+3473 4746 Pls
+3471 4746 Pls
+3469 4747 Pls
+3467 4747 Pls
+3466 4747 Pls
+3464 4747 Pls
+3461 4748 Pls
+3460 4748 Pls
+3459 4748 Pls
+3455 4748 Pls
+3454 4748 Pls
+3446 4749 Pls
+3437 4750 Pls
+3430 4750 Pls
+3427 4751 Pls
+3424 4751 Pls
+3423 4751 Pls
+3422 4751 Pls
+3420 4751 Pls
+3413 4752 Pls
+3410 4752 Pls
+3408 4752 Pls
+3406 4752 Pls
+3399 4753 Pls
+3398 4753 Pls
+3396 4753 Pls
+3392 4753 Pls
+3378 4754 Pls
+3372 4755 Pls
+3366 4755 Pls
+3365 4755 Pls
+3360 4755 Pls
+3357 4756 Pls
+3353 4756 Pls
+3348 4756 Pls
+3346 4757 Pls
+3341 4757 Pls
+3326 4758 Pls
+3323 4758 Pls
+3321 4758 Pls
+3317 4758 Pls
+3314 4759 Pls
+3301 4759 Pls
+3280 4760 Pls
+3277 4761 Pls
+3275 4761 Pls
+3273 4761 Pls
+3267 4762 Pls
+3264 4762 Pls
+3258 4762 Pls
+3254 4764 Pls
+3243 4764 Pls
+3235 4764 Pls
+3227 4765 Pls
+3212 4765 Pls
+3199 4766 Pls
+3198 4766 Pls
+3192 4766 Pls
+3187 4766 Pls
+3178 4767 Pls
+3169 4767 Pls
+3161 4767 Pls
+3143 4768 Pls
+3134 4768 Pls
+3125 4769 Pls
+3122 4769 Pls
+3106 4769 Pls
+3076 4770 Pls
+3066 4770 Pls
+3058 4770 Pls
+3045 4771 Pls
+3023 4771 Pls
+2977 4771 Pls
+2927 4772 Pls
+2900 4772 Pls
+2857 4773 Pls
+2811 4773 Pls
+2705 4774 Pls
+2576 4774 Pls
+2470 4775 Pls
+2409 4775 Pls
+2175 4775 Pls
+6243 877 Pls
+% End plot #1
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+1474 4775 N
+0 -4071 V
+5329 0 V
+0 4071 V
+-5329 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica
