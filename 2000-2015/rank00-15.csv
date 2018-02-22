@@ -1,0 +1,51 @@
+population,Label,,Degree,Label,,,,,,,,,,,,,
+10043944,Los Angeles-CA,,1856,Maricopa-AZ,,,,,,,,,,,,,
+6186109,Cook-IL,,1557,Los Angeles-CA,,,,,,population,Degree,weighted indegree,weighted outdegree,betweenesscentrality,Hub,pageranks,eigencentrality
+3728359,Harris-TX,,1500,Harris-TX,,,,,,Los Angeles-CA,Maricopa-AZ,Los Angeles-CA,Los Angeles-CA,Maricopa-AZ,Maricopa-AZ,Maricopa-AZ,Maricopa-AZ
+3307858,Maricopa-AZ,,1483,San Diego-CA,,,,,,Cook-IL,Los Angeles-CA,Harris-TX,Cook-IL,Cook-IL,Los Angeles-CA,Harris-TX,Los Angeles-CA
+3244040,San Diego-CA,,1457,Cook-IL,,,,,,Harris-TX,Harris-TX,Maricopa-AZ,Harris-TX,Harris-TX,San Diego-CA,Clark-NV,Harris-TX
+3241753,Orange-CA,,1396,Clark-NV,,,,,,Maricopa-AZ,San Diego-CA,Cook-IL,Dallas-TX,Los Angeles-CA,Cook-IL,Travis-TX,San Diego-CA
+2453528,Dallas-TX,,1257,Travis-TX,,,,,,San Diego-CA,Cook-IL,San Diego-CA,San Diego-CA,Hennepin-MN,Clark-NV,Los Angeles-CA,Clark-NV
+2432901,Dade-FL,,1232,Dallas-TX,,,,,,Orange-CA,Clark-NV,Dallas-TX,New York-NY,Dallas-TX,Harris-TX,Tarrant-TX,Travis-TX
+2391187,Kings-NY,,1205,Tarrant-TX,,,,,,Dallas-TX,Travis-TX,Riverside-CA,Orange-CA,Franklin-OH,Hillsborough-FL,Dallas-TX,Cook-IL
+2352465,Queens-NY,,1195,Hillsborough-FL,,,,,,Dade-FL,Dallas-TX,New York-NY,Maricopa-AZ,Clark-NV,Broward-FL,San Diego-CA,Hillsborough-FL
+,,,,,,,,,,Kings-NY,Tarrant-TX,Orange-CA,Kings-NY,Tarrant-TX,Dade-FL,Cook-IL,Dallas-TX
+,,,,,,,,,,Queens-NY,Hillsborough-FL,San Bernardino-CA,Queens-NY,San Diego-CA,Travis-TX,Hillsborough-FL,Tarrant-TX
+,,,,,,,,,,,,,,,,,
+weighted indegree,Label,,weighted outdegree,Label,,,,,,,,,,,,,
+4318368,Los Angeles-CA,,5850672,Los Angeles-CA,,,,,,,,,,,,,
+3079029,Harris-TX,,3786100,Cook-IL,,,,,,,,,,,,,
+3041665,Maricopa-AZ,,3103852,Harris-TX,,,,,,,,,,,,,
+2709701,Cook-IL,,2661856,Dallas-TX,,,,,,,,,,,,,
+2411402,San Diego-CA,,2582828,San Diego-CA,,,,,,,,,,,,,
+2348624,Dallas-TX,,2571531,New York-NY,,,,,,,,,,,,,
+2345565,Riverside-CA,,2517937,Orange-CA,,,,,,,,,,,,,
+2256804,New York-NY,,2487194,Maricopa-AZ,,,,,,,,,,,,,
+2216944,Orange-CA,,2384129,Kings-NY,,,,,,,,,,,,,
+2037898,San Bernardino-CA,,2235627,Queens-NY,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+betweenesscentrality,Label,,Hub,Label,,,,,,,,,,,,,
+807613.311517,Maricopa-AZ,,0.103036,Maricopa-AZ,,,,,,,,,,,,,
+527632.252908,Cook-IL,,0.102826,Los Angeles-CA,,,,,,,,,,,,,
+449707.839686,Harris-TX,,0.101882,San Diego-CA,,,,,,,,,,,,,
+346117.725442,Los Angeles-CA,,0.097849,Cook-IL,,,,,,,,,,,,,
+304081.553098,Hennepin-MN,,0.096805,Clark-NV,,,,,,,,,,,,,
+271418.493295,Dallas-TX,,0.095541,Harris-TX,,,,,,,,,,,,,
+263781.988417,Franklin-OH,,0.092635,Hillsborough-FL,,,,,,,,,,,,,
+262558.749881,Clark-NV,,0.092366,Broward-FL,,,,,,,,,,,,,
+255041.996069,Tarrant-TX,,0.092235,Dade-FL,,,,,,,,,,,,,
+249888.051417,San Diego-CA,,0.089888,Travis-TX,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+pageranks,Label,,eigencentrality,Label,,,,,,,,,,,,,
+0.006975,Maricopa-AZ,,1,Maricopa-AZ,,,,,,,,,,,,,
+0.005667,Harris-TX,,0.949141,Los Angeles-CA,,,,,,,,,,,,,
+0.004698,Clark-NV,,0.946941,Harris-TX,,,,,,,,,,,,,
+0.004693,Travis-TX,,0.943109,San Diego-CA,,,,,,,,,,,,,
+0.00463,Los Angeles-CA,,0.93021,Clark-NV,,,,,,,,,,,,,
+0.00455,Tarrant-TX,,0.911237,Travis-TX,,,,,,,,,,,,,
+0.004537,Dallas-TX,,0.896551,Cook-IL,,,,,,,,,,,,,
+0.004477,San Diego-CA,,0.895477,Hillsborough-FL,,,,,,,,,,,,,
+0.004475,Cook-IL,,0.857686,Dallas-TX,,,,,,,,,,,,,
+0.003838,Hillsborough-FL,,0.856299,Tarrant-TX,,,,,,,,,,,,,
