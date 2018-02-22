@@ -1,0 +1,222 @@
+
+#!/bin/bash -f 
+
+
+#Copyright (C) 2000,2001,2002 The Regents of the University of California.
+
+#This program is free software; you can redistribute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation; either version 2 of the License, or
+#(at your option) any later version.
+
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+
+#You should have received a copy of the GNU General Public License
+#along with this program; if not, write to the Free Software
+#Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+# Author: Priya Mahadevan (pmahadevan@cs.ucsd.edu)
+#
+
+#read the input file and other parameters from params file
+source ./params
+
+echo "Running scripts to find degree related information"
+
+if [ ! -f $input_file ]; then 
+    echo "I can't find you input file $input_file. Please specify the correct input file"
+    exit 1
+fi
+
+#the input file is undirected, format is node-a node-b 
+
+# run the perl script - connectivity_metrics.pl  This program requires
+# the inputfile name and an outfile name... 
+
+output_file="output"
+
+
+if [ ! -f $output_file ]; then 
+	rm -r $output_file
+fi
+
+if [ ! -f out.nbr ]; then 
+        rm -r out.nbr
+fi
+
+if [ ! -f out.clus ]; then 
+	rm -r out.clus
+fi
+
+if [ ! -f out.deg ]; then 
+	rm -r out.deg
+fi
+
+perl connectivity_metrics.pl $input_file $output_file out.nbr out.clus out.deg 
+
+#exit
+
+#plot the graph.... 
+#write a .plot file for gnuplot which will do the plotting and curve fitting..
+
+
+#plot rich_club connectivity......
+
+plotfile="rich_club.plot";
+
+if [ ! -f $plotfile ]; then 
+    rm -f $plotfile
+fi
+
+echo "set ylabel \"Rich Club Connectivity\" " > $plotfile
+echo "set xlabel \"Normalized rank r/N \" " >> $plotfile
+echo "set terminal postscript eps color \"Helvetica\" 22 " >> $plotfile
+echo "set output \"rich_club.ps\" " >> $plotfile
+echo "set key bottom right" >> $plotfile
+
+echo "set logscale" >> $plotfile
+echo "plot 'rich_club' using 1:2 title 'Data' with linespoints" >> $plotfile 
+
+gnuplot $plotfile
+
+echo "Finished plotting the file, results are stored in rich_club.ps "
+
+
+#now, plot ccdf of degree distribution
+
+plotfile="ccdf_deg_dist.plot";
+
+if [ ! -f $plotfile ]; then 
+    rm -f $plotfile
+fi
+
+echo "set ylabel \"CCDF\" " > $plotfile
+echo "set xlabel \"Node degree\" " >> $plotfile
+echo "set terminal postscript eps color \"Helvetica\" 22 " >> $plotfile
+echo "set output \"ccdf_deg.ps\" " >> $plotfile
+echo "set key bottom right" >> $plotfile
+
+echo "set logscale" >> $plotfile
+
+#echo "f2(x) =  c * x ** (gamma)" >> $plotfile 
+#echo "gamma = -1.1;  c = 1;"  >> $plotfile 
+#echo "fit f2(x) 'deg.ccdf' using 1:2 via c, gamma"  >> $plotfile 
+
+echo "plot 'deg.ccdf' using 2:1 with linespoints" >> $plotfile
+#echo "f2(x) title 'Curve-fit' " >> $plotfile 
+gnuplot $plotfile
+
+echo "Finished plotting the file, results are stored in ccdf_deg.ps "
+
+
+
+plotfile="degree_dist.plot";
+
+if [ ! -f $plotfile ]; then 
+    rm -f $plotfile
+fi
+
+echo "set ylabel \"Node Degree Distribution\" " > $plotfile
+echo "set xlabel \"Node degree\" " >> $plotfile
+echo "set terminal postscript eps color \"Helvetica\" 22 " >> $plotfile
+echo "set output \"degree_distr.ps\" " >> $plotfile
+echo "set key bottom right" >> $plotfile
+
+echo "set logscale" >> $plotfile
+
+#echo "f2(x) =  a*x + b" >> $plotfile 
+#echo "a = -1.1;  b = 1;"  >> $plotfile 
+#echo "fit f2(x) 'out.deg' using 3:4 via a, b"  >> $plotfile 
+
+echo "plot 'out.deg' using 1:2 title 'Data' with linespoints" >> $plotfile 
+#echo " 2.7182 ** (a* log(x) + b) title 'Curve-fit' " >> $plotfile 
+
+gnuplot $plotfile
+
+echo "Finished plotting the file, results are stored in degree_dist.ps "
+
+# Now, plot graph for cluster coeff....
+plotfile="clus_coeff.plot";
+
+if [ ! -f $plotfile ]; then 
+    rm -f $plotfile
+fi
+
+echo "set ylabel \"Cluster Coefficient\" " > $plotfile
+echo "set xlabel \"Node degree\" " >> $plotfile
+echo "set terminal postscript eps color \"Helvetica\" 22 " >> $plotfile
+echo "set output \"clus_coeff.ps\" " >> $plotfile
+echo "set key bottom right" >> $plotfile
+
+echo "set logscale" >> $plotfile
+
+#echo "f2(x) =  c * x ** (gamma)" >> $plotfile 
+#echo "gamma = -2;  c = 2;"  >> $plotfile 
+#echo "fit f2(x) 'out.clus' using 1:2 via c, gamma"  >> $plotfile 
+
+#echo "f2(x) =  a * x + b" >> $plotfile
+#echo "b = -0.01;  a = -1.1;" >> $plotfile
+#echo "fit f2(x) 'clus.log' using 1:2 via a, b" >> $plotfile
+
+echo "plot 'out.clus' using 1:2 title 'Observed Value' with linespoints" >> $plotfile
+#echo "'out.clus' using 1:3 title 'Predicted Value' with linespoints, f2(x) title 'Curve-fit'" >> $plotfile
+#echo "2.7182 ** (a* log(x) + b) title 'Curve-fit' " >> $plotfile
+#echo "f2(x) title 'Curve-fit' " >> $plotfile 
+
+gnuplot $plotfile
+
+echo "Finished plotting the file, results are stored in clus_coeff.ps "
+
+
+# Now, plot graph for avg nbr connectivity....
+plotfile="avg_nbr_conn.plot";
+
+if [ ! -f $plotfile ]; then 
+    rm -f $plotfile
+fi
+
+echo "set ylabel \"Average Neighbor Degree\" " > $plotfile
+echo "set xlabel \"Node degree\" " >> $plotfile
+echo "set terminal postscript eps color \"Helvetica\" 22 " >> $plotfile
+echo "set output \"avg_nbr_conn.ps\" " >> $plotfile
+echo "set key bottom right" >> $plotfile
+
+echo "set logscale" >> $plotfile
+
+#echo "f2(x) =  c * x ** (gamma)" >> $plotfile 
+#echo "gamma = -1.4;  c = 1;"  >> $plotfile 
+#echo "fit f2(x) 'out.nbr' using 1:2 via c, gamma"  >> $plotfile 
+
+#echo "f2(x) =  a * x + b" >> $plotfile 
+#echo "b = -0.01;  a = -1.1;"  >> $plotfile 
+#echo "fit f2(x) 'out.nbr' using 3:4 via a,b "  >> $plotfile 
+
+echo "plot 'out.nbr' using 1:2 title 'Data' with linespoints" >> $plotfile 
+#echo "2.7182 ** (a* log(x) + b) title 'Curve-fit' " >> $plotfile 
+
+
+gnuplot $plotfile
+
+echo "Finished plotting the file, results are stored in avg_nbr_conn.ps "
+
+plotfile="ccdf_avg_nbr.plot";
+
+if [ ! -f $plotfile ]; then 
+    rm -f $plotfile
+fi
+
+echo "set ylabel \"CCDF\" " > $plotfile
+echo "set xlabel \"Average Neighbor degree\" " >> $plotfile
+echo "set terminal postscript eps color \"Helvetica\" 22 " >> $plotfile
+echo "set output \"ccdf_avg_nbr.ps\" " >> $plotfile
+echo "set key bottom right" >> $plotfile
+
+echo "set logscale" >> $plotfile
+echo "plot 'nbr.ccdf' using 1:2 with linespoints" >> $plotfile
+
+gnuplot $plotfile
+
+echo "Finished plotting the file, results are stored in ccdf_avg_nbr.ps "
