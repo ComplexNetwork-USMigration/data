@@ -1,0 +1,27 @@
+Number of nodes = 2875 
+Number of edges = 46455 
+Average node degree = 32.3165217391304 
+Maximum node degree = 967
+Maximum degree ratio = 0.336464857341684
+Top clique size = 42 
+entropy of node degree distribution = 3.84794817864851
+Entropy of Binomial Node degree distribution (maximum) = 4.52434899588439
+Ratio of entropy to maximum possible entropy = 0.850497647760779
+Mutual Information of degree degree distribution = 0.972276704460677 
+Max possible mutual_information = 9.85152738523605 
+
+Mutual Information ratio = 0.901307008909321 
+assortative coefficient for the graph = 0.254774896254689
+Maximum local clustering = 1
+Weighted cluster coeff of the graph (weighted on degree) = 0.331018249683435 
+Mean clustering C_bar = 0.312099105452722
+PKK / measured mean clustering ratio = 0.572101484752704
+Theoretical cluster coefficient = 0.857397265986537
+PKK / PK ratio = 1.26945913915848 
+K / PK ratio = 0.0799171319839083 
+Clustering coeff of the graph = 0.333687909750045
+measured to PKK ratio  = 2.56945858970073 
+Average average neighbor degree = 0.0133503448501318
+Maximum average neighbor degree = 0.0692794331625229
+PK / measured avg neighbor degree ratio = 3.00543948943828
+Degree for which avg nbr connectivity is maximum = 110
