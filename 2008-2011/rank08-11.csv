@@ -1,0 +1,54 @@
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+population,Label,,Degree,Label,,,,,population,Degree,weighted indegree,weighted outdegree,betweenesscentrality,Hub,pageranks,eigencentrality
+10900580,Los Angeles-CA,,1509,Maricopa-AZ,,,,,Los Angeles-CA,Maricopa-AZ,Los Angeles-CA,Los Angeles-CA,Maricopa-AZ,Maricopa-AZ,Maricopa-AZ,Maricopa-AZ
+6291480,Cook-IL,,1307,Harris-TX,,,,,Cook-IL,Harris-TX,Harris-TX,Cook-IL,Harris-TX,Los Angeles-CA,Harris-TX,Harris-TX
+4434883,Harris-TX,,1277,Los Angeles-CA,,,,,Harris-TX,Los Angeles-CA,Cook-IL,Harris-TX,Cook-IL,San Diego-CA,Los Angeles-CA,Los Angeles-CA
+4256025,Maricopa-AZ,,1244,San Diego-CA,,,,,Maricopa-AZ,San Diego-CA,Maricopa-AZ,Maricopa-AZ,Hennepin-MN,Cook-IL,Dallas-TX,San Diego-CA
+3582105,San Diego-CA,,1207,Cook-IL,,,,,San Diego-CA,Cook-IL,Dallas-TX,New York-NY,Los Angeles-CA,Clark-NV,Cook-IL,Hillsborough-FL
+3509858,Orange-CA,,1124,Clark-NV,,,,,Orange-CA,Clark-NV,San Diego-CA,Dallas-TX,Dallas-TX,Harris-TX,San Diego-CA,Clark-NV
+2805789,Miami-Dade-FL,,1074,Hillsborough-FL,,,,,Miami-Dade-FL,Hillsborough-FL,New York-NY,San Diego-CA,Tarrant-TX,Hillsborough-FL,Tarrant-TX,Cook-IL
+2686635,Kings-NY,,1017,Dallas-TX,,,,,Kings-NY,Dallas-TX,Riverside-CA,Orange-CA,Franklin-OH,Miami-Dade-FL,Clark-NV,Dallas-TX
+2663238,Dallas-TX,,1004,Tarrant-TX,,,,,Dallas-TX,Tarrant-TX,Orange-CA,Kings-NY,San Diego-CA,Broward-FL,Hillsborough-FL,Tarrant-TX
+2590405,Queens-NY,,934,Miami-Dade-FL,,,,,Queens-NY,Miami-Dade-FL,Broward-FL,Miami-Dade-FL,Clark-NV,Orange-FL,Bexar-TX,Miami-Dade-FL
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+weighted indegree,Label,,weighted outdegree,Label,,,,,,,,,,,,
+1135686,Los Angeles-CA,,1405589,Los Angeles-CA,,,,,,,,,,,,
+811761,Harris-TX,,840982,Cook-IL,,,,,,,,,,,,
+713453,Cook-IL,,768601,Harris-TX,,,,,,,,,,,,
+704580,Maricopa-AZ,,683147,Maricopa-AZ,,,,,,,,,,,,
+624689,Dallas-TX,,671596,New York-NY,,,,,,,,,,,,
+615951,San Diego-CA,,638075,Dallas-TX,,,,,,,,,,,,
+603466,New York-NY,,612083,San Diego-CA,,,,,,,,,,,,
+580236,Riverside-CA,,577308,Orange-CA,,,,,,,,,,,,
+573622,Orange-CA,,575943,Kings-NY,,,,,,,,,,,,
+526793,Broward-FL,,551491,Miami-Dade-FL,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+betweenesscentrality,Label,,Hub,Label,,,,,,,,,,,,
+750929.586071,Maricopa-AZ,,0.112679,Maricopa-AZ,,,,,,,,,,,,
+560903.297933,Harris-TX,,0.110803,Los Angeles-CA,,,,,,,,,,,,
+555820.629611,Cook-IL,,0.109972,San Diego-CA,,,,,,,,,,,,
+366958.421994,Hennepin-MN,,0.105641,Cook-IL,,,,,,,,,,,,
+351880.707116,Los Angeles-CA,,0.10491,Clark-NV,,,,,,,,,,,,
+275273.433455,Dallas-TX,,0.102823,Harris-TX,,,,,,,,,,,,
+271088.279985,Tarrant-TX,,0.101946,Hillsborough-FL,,,,,,,,,,,,
+268883.692412,Franklin-OH,,0.099601,Miami-Dade-FL,,,,,,,,,,,,
+262239.381716,San Diego-CA,,0.098157,Broward-FL,,,,,,,,,,,,
+253662.113172,Clark-NV,,0.093701,Orange-FL,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+pageranks,Label,,eigencentrality,Label,,,,,,,,,,,,
+0.006803,Maricopa-AZ,,1,Maricopa-AZ,,,,,,,,,,,,
+0.006538,Harris-TX,,0.976488,Harris-TX,,,,,,,,,,,,
+0.004989,Los Angeles-CA,,0.965153,Los Angeles-CA,,,,,,,,,,,,
+0.004913,Dallas-TX,,0.96053,San Diego-CA,,,,,,,,,,,,
+0.004881,Cook-IL,,0.92274,Hillsborough-FL,,,,,,,,,,,,
+0.004836,San Diego-CA,,0.922639,Clark-NV,,,,,,,,,,,,
+0.004804,Tarrant-TX,,0.910337,Cook-IL,,,,,,,,,,,,
+0.004595,Clark-NV,,0.884793,Dallas-TX,,,,,,,,,,,,
+0.004458,Hillsborough-FL,,0.877492,Tarrant-TX,,,,,,,,,,,,
+0.004216,Bexar-TX,,0.867291,Miami-Dade-FL,,,,,,,,,,,,
